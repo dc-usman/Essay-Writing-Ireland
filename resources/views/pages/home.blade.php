@@ -1,6 +1,6 @@
 @extends('layouts.web')
 
-@section('title', 'Assignment Help UAE: Ace Assignments Writing Service Dubai')
+@section('title', 'Essay Writing IreLand')
 @section('description', 'Want To Improve Your Grades? Contact UAE’s #1 Assignments Help Services and Get Assistance from Cheap Assignment Writing Service UAE and Achieve High Grades.')
 @section('canonical', config('app.app_url'))
 

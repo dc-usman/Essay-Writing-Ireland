@@ -30,11 +30,18 @@ module.exports = {
                 'bg-wave': "url('../../imgs/bg-wave.svg')",
             }),
             colors: {
-                'primary-light': '#15CEF4',
-                'primary-dark': '#3859B5',
-                'secondary': '#43464C',
-                'secondary-dark': '#2C2E32',
-            },
+                // 'primary-light': '#15CEF4',  //light blue
+                // 'primary-dark': '#3859B5',   //dark blue
+                // 'secondary': '#43464C',      //dark gray
+                // 'secondary-dark': '#2C2E32', //dark dark gray
+
+                'primary-light': '#D79274',  //dark pink  //#D79274
+                'primary-dark': '#463033',   //MAroon     //red #CE2F38
+                'secondary':'#CE2F38' ,     //red  //mehndi //''//#D2BF79
+                'secondary-dark': '#D0CFA9', //Biscuiti color
+                //'primary-mehndi':'#D2BF79',     
+                //'color-gray':'#ABB2B5',
+            },  
             keyframes: {
                 wiggle: {
                     '0%, 100%': { transform: 'rotate(-5deg)' },

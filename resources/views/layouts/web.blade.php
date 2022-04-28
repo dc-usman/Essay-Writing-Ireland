@@ -34,10 +34,11 @@
     <link rel="canonical" href="@yield('canonical', '')"/>
 
     {{-- Favicon --}}
-    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+    {{-- <link rel="shortcut icon" href="{{ asset('favicon.ico') }}"> --}}
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
-    {{-- <link rel="manifest" href="./site.webmanifest">
-    <meta name="msapplication-config" content="./browserconfig.xml"> --}}
+    
 
     {{-- AOS CSS CDN --}}
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
