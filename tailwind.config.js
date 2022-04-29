@@ -35,12 +35,17 @@ module.exports = {
                 // 'secondary': '#43464C',      //dark gray
                 // 'secondary-dark': '#2C2E32', //dark dark gray
 
-                'primary-light': '#D79274',  //dark pink  //#D79274
+                'primary-light': '#CE2F38',  //dark pink  //#D79274
                 'primary-dark': '#463033',   //MAroon     //red #CE2F38
                 'secondary':'#CE2F38' ,     //red  //mehndi //''//#D2BF79
-                'secondary-dark': '#D0CFA9', //Biscuiti color
+                'secondary-dark': '#000', //Biscuiti color #D0CFA9 text-color
                 //'primary-mehndi':'#D2BF79',     
-                //'color-gray':'#ABB2B5',
+                'color-gray':'#ABB2B5',         //amber-light #b45309 amber-dark //#fbbf24
+                'color-gold':'#ffdb00',
+                'color-gold-light':'#7a6a05',
+                'color-maroon-light':'#895058',
+                'color-primary-dark':'#9a5130',
+                'color-footer':'#361e21',
             },  
             keyframes: {
                 wiggle: {

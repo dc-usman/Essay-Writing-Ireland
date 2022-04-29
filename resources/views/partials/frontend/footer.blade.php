@@ -1,4 +1,4 @@
-<footer class=" bg-gray-800 body-font">
+<footer class=" bg-color-footer body-font">
 
     <div
         class="container lg:px-9 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">

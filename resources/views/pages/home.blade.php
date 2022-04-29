@@ -354,7 +354,7 @@
     {{-- Why Only Our Cheap --}}
     <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div class="md:w-1/3">
-            <img src="../imgs/mobile.jpg" alt="mobile" data-aos="fade-right" data-aos-duration="1000">
+            <img src="../imgs/mobile-1.svg" alt="mobile" data-aos="fade-right" data-aos-duration="1000">
         </div>
 
         <div class="px-2 py-6 lg:px-0 md:w-2/3">
@@ -673,7 +673,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:px-28 xl:grid-cols-3 py-5 ">
 
-            <div class=" border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-sky-400 md:p-4">
+            <div class=" border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Dissertation Help</h4>
                 <p class="text-gray-700 text-base mb-4">
                     Done with your dissertation but still not satisfied or looking for a writer to write dissertation from
@@ -682,7 +682,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-sky-400 md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">
                     <a href="{{route('services.show', 'thesis-writing')}}">
                         Thesis Writing
@@ -695,7 +695,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 border-sky-400 md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Case Study Writing</h4>
                 <p class="text-gray-700 text-base mb-4">
                     Are you about to write a case study? But do you know what it’s meant for? Writing with purpose and
@@ -704,7 +704,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-sky-400 md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Admission Essay Help</h4>
                 <p class="text-gray-700 text-base mb-4">
                     No more pitying off your situation just because you’re struggling to write admission essays. Get the job
@@ -712,7 +712,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-sky-400 md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">
                     <a href="{{route('services.show', 'essay-writing')}}">
                         Essay Writing
@@ -725,7 +725,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 border-sky-400 md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Coursework Help</h4>
                 <p class="text-gray-700 text-base mb-4">
                     Instead of making the coursework a headache, how about taking help from the writers who are already
@@ -734,7 +734,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 md:p-4 border-sky-400">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 md:p-4 border-primary-light">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Homework Help</h4>
                 <p class="text-gray-700 text-base mb-4">
                     Whether you need homework help in accounting, mathematics, English, electronics, or nursing, our
@@ -742,7 +742,7 @@
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 border-sky-400 md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 border-primary-light md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl py-3 pt-2">Online Help</h4>
                 <p class="text-gray-700 text-base mb-4">
                     It becomes difficult to complete your paper without the availability of the best assignment website. But
@@ -774,7 +774,7 @@
             <h3 class="main-heading my-4">
                 No More Struggles to Meet Deadlines with Our Assignment Writing Help in Dubai
             </h3>
-            <p class="text-secondary text-sm py-7 leading-6">
+            <p class="text-secondary-dark text-sm py-7 leading-6">
                 Time to say Goodbye to all the academic chaos. And time to say Hi to the best assignment writing services in
                 UAE. You heard it right. It’s been a decade providing assignment help online and to be honest, we don’t have
                 a single disappointed customer in our history. Whether it's about assistance or writing custom papers from
@@ -976,13 +976,13 @@
     </div>
 
     {{-- Help --}}
-    <div class=" bg-cyan-900 text-center py-6">
+    <div class=" bg-primary-dark text-center py-6">
         <h4 class="font-bold text-white text-3xl text-center py-4 px-3">
             Get Your Troubles Sorted with our Leading Assignment Writing Dubai UAE
         </h4>
 
         <a href="{{ route('order') }}"
-            class="inline-flex bg-gradient-to-r from-cyan-400 to-blue-600 text-white border-0 py-2 px-6 my-4 hover:bg-cyan-600 rounded text-lg up-animate">
+            class="inline-flex bg-gradient-to-r from-amber-400 to-amber-800 text-white border-0 py-2 px-6 my-4 hover:bg-cyan-600 rounded text-lg up-animate">
             Order Now
         </a>
 
