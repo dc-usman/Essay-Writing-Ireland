@@ -295,7 +295,7 @@
                     </div>
                 </div>
                 {{-- <div class="hidden lg:block w-1/4"></div> --}}
-                <div class="w-full lg:w-1/2 bg-flag-uae bg-no-repeat bg-contain bg-center">
+                <div class="w-full lg:w-1/2  bg-center">
                     <div class="max-w-xs m-auto mt-20" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
                         <h4 class="font-bold title-font text-center text-2xl bg-gradient-to-r from-primary-light to-primary-dark text-white py-3 px-7 rounded-t-lg">
                             Calculate Your Price

@@ -357,9 +357,9 @@
     </div>
 
     {{-- Why Only Our Cheap --}}
-    <div class="container mx-auto flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3">
-            <img src="../imgs/mobile-1.svg" alt="mobile" data-aos="fade-right" data-aos-duration="1000">
+    <div class="container mx-auto flex flex-col md:flex-row items-center ">
+        <div class="md:w-1/3 mt-[52.2px]">
+            <img src="../imgs/mobile-2.svg" alt="mobile" data-aos="fade-right" data-aos-duration="1000">
         </div>
 
         <div class="px-2 py-6 lg:px-0 md:w-2/3">

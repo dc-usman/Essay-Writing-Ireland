@@ -245,7 +245,7 @@
                                 @enderror
                             </div>
                         </div>
-                        <h2 class="text-center text-blue-700 my-4 font-medium title-font text-3xl">
+                        <h2 class="text-center text-red-700 my-4 font-medium title-font text-3xl">
                             Total Cost AED: <span class="text-3xl"> <span id="cost"> 0</span>
                         </h2>
                         <div class="text-center">
