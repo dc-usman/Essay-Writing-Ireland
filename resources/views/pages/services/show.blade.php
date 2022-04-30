@@ -72,7 +72,7 @@
                 class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="p-4 flex flex-row items-center justify-between">
                     <a class="flex items-center py-4 px-2" href="{{ route('home') }}">
-                        <img src="{{ asset('imgs/logo.png') }}" alt="Logo" class="h-16 mt-3">
+                        <img src="{{ asset('imgs/logo.png') }}" alt="Logo" class="h-[6rem] mt-3">
                     </a>
                     <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -412,7 +412,7 @@
     </section>
 
     {{-- Help --}}
-    <div class=" bg-cyan-900 text-center py-6">
+    <div class=" bg-primary-dark text-center py-6">
         <h4 class="font-bold text-white text-3xl text-center py-4 px-3">
             Get Your Troubles Sorted with our Leading Assignment Writing Dubai UAE
         </h4>

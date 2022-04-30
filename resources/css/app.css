@@ -29,7 +29,7 @@
     }
 
     .page-bar {
-        @apply mx-auto bg-gradient-to-l from-primary-light to-blue-600 text-white text-2xl sm:text-3xl md:text-4xl py-6 font-bold text-center;
+        @apply mx-auto bg-gradient-to-r from-primary-light to-primary-dark text-white text-2xl sm:text-3xl md:text-4xl py-6 font-bold text-center;
     }
 
 }

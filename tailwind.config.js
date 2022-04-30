@@ -36,7 +36,7 @@ module.exports = {
                 // 'secondary-dark': '#2C2E32', //dark dark gray
 
                 'primary-light': '#CE2F38',  //dark pink  //#D79274
-                'primary-dark': '#463033',   //MAroon     //red #CE2F38
+                'primary-dark':  '#463033',   //MAroon     //red #CE2F38
                 'secondary':'#CE2F38' ,     //red  //mehndi //''//#D2BF79
                 'secondary-dark': '#000', //Biscuiti color #D0CFA9 text-color
                 //'primary-mehndi':'#D2BF79',     

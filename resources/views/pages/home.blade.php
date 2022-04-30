@@ -6,6 +6,11 @@
 
 @section('content')
 
+<style>
+    *{
+         /* border:1px solid red;  */
+    }
+</style>
     {{-- Full Flag with Navbar --}}
     <div class="w-full xl:bg-flag-uae bg-no-repeat bg-contain bg-right 3xl:bg-none">
         {{-- Navbar --}}
@@ -14,7 +19,7 @@
                 class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="p-4 flex flex-row items-center justify-between">
                     <a class="flex items-center py-4 px-2" href="{{ route('home') }}">
-                        <img src="{{ asset('imgs/logo.png') }}" alt="Logo" class="h-16 mt-3">
+                        <img src="{{ asset('imgs/logo.png') }}" alt="Logo" class="h-[6rem] mt-3">
                     </a>
                     <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                         <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -668,9 +673,9 @@
             class="bg-none lg:bg-leftwaves lg:h-[50rem] lg:bg-left lg:bg-contain lg:bg-no-repeat lg:block lg:absolute lg:top-32 lg:right-0 lg:-left-11 bottom-0 -z-10 ">
         </div>
         <div
-            class="bg-none lg:bg-rightwaves lg:h-[30rem] lg:bg-right lg:bg-contain lg:bg-no-repeat lg:block lg:absolute lg:top-20 lg:-right-11 lg:left-0 bottom-0 -z-10 ">
+            class=" bg-none lg:bg-rightwaves lg:h-[30rem] lg:bg-right lg:bg-contain lg:bg-no-repeat lg:block lg:absolute lg:top-20 lg:-right-[32.75px] lg:left-0 bottom-0 -z-10 "> 
         </div>
-
+        {{--  --}}
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:px-28 xl:grid-cols-3 py-5 ">
 
             <div class=" border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
