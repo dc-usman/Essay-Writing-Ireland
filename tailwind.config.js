@@ -13,7 +13,7 @@ module.exports = {
             backgroundImage: theme => ({
                 'hero-pattern': "url('../../imgs/flag.png')",
                 'hero-flag': "url('../../imgs/hero-flag.svg')",
-                'flag-uae': "url('../../imgs/flag-uae.png')",
+                'flag-uae': "url('../../imgs/flag-ir.svg')",
                 'tm': "url('../../imgs/bgtesti.svg')",
                 's1': "url('../../imgs/s1.jpg')",
                 's2': "url('../../imgs/s2.jpg')",
@@ -46,6 +46,8 @@ module.exports = {
                 'color-maroon-light':'#895058',
                 'color-primary-dark':'#9a5130',
                 'color-footer':'#361e21',
+                'slider-button-dark':'#ba0f0f',
+                'slider-button-light':'#f05151',
             },  
             keyframes: {
                 wiggle: {

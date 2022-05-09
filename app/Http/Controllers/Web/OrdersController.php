@@ -92,20 +92,21 @@ class OrdersController extends Controller
                     array_push( $files, $filePath);
 
                     File::create([
-                        "order_id" => $order->id,
-                        "file_path" => $filePath
+                         "order_id" => $order->id,
+                         "file_path" => $filePath
                     ]);
                 }
             }
-
+        //     return $filePath;
             // Send mail to user
-            Mail::to($request->email)->send(new OrderMail($request, $files));
+         //   Mail::to($request->email)->send(new OrderMail($request, $files));
 
             // Send mail to admin
-            Mail::to(env('MAIL_FROM_ADDRESS', config('app.app_email')) )->send(new OrderAdminMail($request, $files));
+          //  Mail::to(env('MAIL_FROM_ADDRESS', config('app.app_email')) )->send(new OrderAdminMail($request, $files));
 
         DB::commit();
 
-        return view('pages.order-success', compact('order'))->with('success', 'Thank you for reaching out!');
+        // return response()->json(['success'=>"Thank you for showing your intrest, We've receive your query successfully."]);
+        return redirect()->back()->withSuccess("Thank you for showing your intrest, We've receive your query successfully.");
     }
 }

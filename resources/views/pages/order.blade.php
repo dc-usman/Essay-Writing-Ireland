@@ -10,8 +10,31 @@
         <h4 class="page-bar">
             Order Now
         </h4>
+        @if (session('success'))
+        <div class="md:w-1/2 my-4 mx-auto bg-teal-100 border-t-4 border-teal-500 rounded-b text-teal-900 px-4 py-3 shadow-md"
+            role="alert">
+            <div class="flex">
+                <div class="py-1">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
+                        style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                        <circle style="fill:#25AE88;" cx="25" cy="25" r="25" />
+                        <polyline
+                            style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;"
+                            points="
+                38,15 22,33 12,25 " />
+                    </svg>
+                </div>
+                <div>
+                    <p class="text-center font-bold">{{ session('success') }}</p>
+                </div>
+            </div>
+        </div>
+    @endif
         <div class="container px-5 pt-3 pb-20  mx-auto">
             <div class="flex flex-col md:px-12 w-full ">
+              
+                <div id="msg-bag" class="my-4"></div>
                 <form id="order-form" action="{{ route('order.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class=" p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 ">
@@ -263,10 +286,11 @@
 
 @section('scripts')
     <script>
+        // Ajax request to submit the form
         $(document).ready(function() {
             const phoneInputField = document.querySelector("#phone");
             const phoneInput = window.intlTelInput(phoneInputField, {
-                preferredCountries: ["ae"],
+                preferredCountries: ["ir"],
                 utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
             });
 
@@ -277,8 +301,8 @@
                 $('#phone2').val(phoneNumber);
                 return true;
             });
-        });
-        $(".get-fare").change(function(e) {
+
+                $(".get-fare").change(function(e) {
             e.preventDefault();
             var data = {
                 "_token": "{{ csrf_token() }}",
@@ -308,5 +332,9 @@
                 }
             });
         });
+        });
+
+        // fare ajax request
+      
     </script>
 @endsection

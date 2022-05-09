@@ -15,7 +15,7 @@
                     </p>
 
                     <a href="{{ route('order') }}"
-                        class="inline-flex bg-gradient-to-r from-cyan-400 to-blue-600 text-white border-0 py-2 px-6 my-4 hover:bg-cyan-600 rounded text-lg up-animate">
+                        class="inline-flex bg-gradient-to-r from-amber-400 to-amber-800 text-white border-0 py-2 px-6 my-4 hover:bg-cyan-600 rounded text-lg up-animate">
                         Order Now
                     </a>
 

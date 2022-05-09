@@ -59,7 +59,7 @@
                             <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
                                 @if (!empty($services))
                                     @foreach ($services as $service)
-                                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-blue-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                                        <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                                         href="{{ route('services.show', $service->slug) }}">{{ $service->name }}</a>
                                     @endforeach
                                 @endif
@@ -311,7 +311,7 @@
                                 @enderror
                             </div>
 
-                            <h4 class="my-4 text-center text-1xl text-blue-600 font-bold uppercase ">
+                            <h4 class="my-4 text-center text-1xl text-red-600 font-bold uppercase ">
                                 Pricing: <span class="text-3xl"> <span id="cost">0</span> AED </span>
                             </h4>
 
@@ -326,7 +326,7 @@
     </div>
 
     {{-- Partners --}}
-    <div class="bg-gradient-to-r from-primary-light to-primary-dark ">
+    <div class="primary-bar ">
         <div class="container mx-auto flex flex-col overflow-hidden items-center justify-center md:flex-row ">
             <span class="mr-1 text-white font-semibold text-center sm:text-xl md:text-xl w-2/6">
                 TRUSTED BY 300,000+ <br> STUDENTS OF :
@@ -358,7 +358,7 @@
 
     {{-- Why Only Our Cheap --}}
     <div class="container mx-auto flex flex-col md:flex-row items-center ">
-        <div class="md:w-1/3 mt-[52.2px]">
+        <div class="md:w-1/3 md:mt-[52.2px]">
             <img src="../imgs/mobile-2.svg" alt="mobile" data-aos="fade-right" data-aos-duration="1000">
         </div>
 
@@ -371,13 +371,13 @@
             </p>
             <div class="space-y-4 mt-2">
                 <div class="flex items-center group">
-                    <svg class="w-1/12 h-10 text-primary-light group-hover:text-cyan-500" fill="none" viewBox="0 0 24 24"
+                    <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
-                        <p class="text-secondary-dark text-xl font-bold">In-depth Research</p>
+                        <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">In-depth Research</p>
                         <p class="text-secondary-dark text-sm pt-1">
                             The reason why our academic help is constantly in need for students is that our papers are
                             backed by strong research.
@@ -385,13 +385,13 @@
                     </div>
                 </div>
                 <div class="flex items-center group">
-                    <svg class="w-1/12 h-10 text-primary-light group-hover:text-cyan-500" fill="none" viewBox="0 0 24 24"
+                    <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
-                        <p class="text-secondary-dark text-xl font-bold">Experienced Writers</p>
+                        <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">Experienced Writers</p>
                         <p class="text-secondary-dark text-sm pt-1">
                             Since we strive for excellence, we provide hands-on training to our writers to make sure they
                             deliver the best. All the writers in our team are highly experienced, certified, and works to
@@ -400,13 +400,13 @@
                     </div>
                 </div>
                 <div class="flex items-center group">
-                    <svg class="w-1/12 h-10 text-primary-light group-hover:text-cyan-500" fill="none" viewBox="0 0 24 24"
+                    <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
-                        <p class="text-secondary-dark text-xl font-bold">Professional Assistance</p>
+                        <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">Professional Assistance</p>
                         <p class="text-secondary-dark text-sm pt-1">
                             So many students give up on their assignments because of the lack of professional help. Here,
                             with our instant assignment writing help UAE, you can get all your worries sorted with our
@@ -415,13 +415,13 @@
                     </div>
                 </div>
                 <div class="flex items-center group">
-                    <svg class="w-1/12 h-10 text-primary-light group-hover:text-cyan-500" fill="none" viewBox="0 0 24 24"
+                    <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
-                        <p class="text-secondary-dark text-xl font-bold">Affordability</p>
+                        <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light ">Affordability</p>
                         <p class="text-secondary-dark text-sm pt-1">
                             We offer quality assignment assistance online without burdening your pockets. You can get the
                             best help at cheap prices.
@@ -433,7 +433,7 @@
     </div>
 
     {{-- Divider --}}
-    <div class="bg-gradient-to-r from-primary-light to-primary-dark h-5"></div>
+    <div class="primary-bar h-5"></div>
 
     {{-- Prices --}}
     <div class="container mx-auto items-center justify-center">
@@ -444,7 +444,7 @@
             <div data-aos="fade-up" data-aos-duration="1000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div
-                    class="bg-gradient-to-r from-primary-light to-primary-dark text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     College
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -460,7 +460,7 @@
             <div data-aos="fade-up" data-aos-duration="2000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div
-                    class="bg-gradient-to-r from-primary-light to-primary-dark text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Undergraduate
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -476,7 +476,7 @@
             <div data-aos="fade-up" data-aos-duration="3000"
                 class="sm:col-span-2 lg:col-span-1 rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div
-                    class="bg-gradient-to-r from-primary-light to-primary-dark text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Master's
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -492,7 +492,7 @@
             <div data-aos="fade-up" data-aos-duration="4000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div
-                    class="bg-gradient-to-r from-primary-light to-primary-dark text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Ph.D.
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -508,7 +508,7 @@
             <div data-aos="fade-up" data-aos-duration="5000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div
-                    class="bg-gradient-to-r from-primary-light to-primary-dark text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Admission Essay
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -646,7 +646,7 @@
             </div>
 
             <p class="text-gray-500 text-2xl md:text-2xl lg:text-4xl pt-8 pb-4 text-center">
-                Get all these features for <del>300 DHS</del> <b class="text-cyan-500">FREE</b>
+                Get all these features for <del>300 DHS</del> <b class="text-color-primary-dark">FREE</b>
             </p>
 
             <div class="flex flex-row justify-center my-4">
@@ -835,7 +835,7 @@
                             <div class=" h-auto text-black py-10 px-10 object-fill">
                                 <p class="text-3xl font-bold my-2">Abdul Sultan</p>
                                 <p class="text-md my-3 ">
-                                    - Their writer followed my instructions and deliver authentic, great work.
+                                     Their writer followed my instructions and deliver authentic, great work.
                                 </p>
                             </div>
                             <br>
@@ -845,7 +845,7 @@
                             <div class=" h-auto text-black py-10 px-10 object-fill">
                                 <p class="text-3xl font-bold my-2">Abdul Malik</p>
                                 <p class="text-md my-3 ">
-                                    - This is a legitimate website. I have used it multiple times for my assignments.
+                                     This is a legitimate website. I have used it multiple times for my assignments.
                                 </p>
                             </div>
                             <br>
@@ -855,7 +855,7 @@
                             <div class=" h-auto text-black py-10 px-10 object-fill">
                                 <p class="text-3xl font-bold my-2">Fatima Sultan</p>
                                 <p class="text-md my-3 ">
-                                    - Hired them for my English essays and research work, I must say they exceeded my expectations.
+                                     Hired them for my English essays and research work, I must say they exceeded my expectations.
                                 </p>
                             </div>
                             <br>
@@ -863,13 +863,13 @@
 
                         <div class="flex justify-between w-20 mx-auto py-4">
                             <button id="sButton1" onclick="sliderButton1()"
-                                class="bg-blue-700 rounded-full w-4 pb-2 "></button>
+                                class="bg-slider-button-dark rounded-full w-4 pb-2 "></button>
                             <button id="sButton2" onclick="sliderButton2() "
-                                class="bg-blue-700 rounded-full w-4 p-2"></button>
+                                class="bg-slider-button-dark rounded-full w-4 p-2"></button>
                             <button id="sButton3" onclick="sliderButton3() "
-                                class="bg-blue-700 rounded-full w-4 p-2"></button>
+                                class="bg-slider-button-dark rounded-full w-4 p-2"></button>
                             <button id="sButton4" onclick="sliderButton4() "
-                                class="bg-blue-700 rounded-full w-4 p-2"></button>
+                                class="bg-slider-button-dark rounded-full w-4 p-2"></button>
                         </div>
                     </div>
 
@@ -1013,11 +1013,11 @@
 
                         $("#slider-1").delay(400).fadeIn(400);
 
-                        $("#sButton2").removeClass("bg-blue-200");
-                        $("#sButton3").removeClass("bg-blue-200");
-                        $("#sButton4").removeClass("bg-blue-200");
+                        $("#sButton2").removeClass("bg-slider-button-light");
+                        $("#sButton3").removeClass("bg-slider-button-light");
+                        $("#sButton4").removeClass("bg-slider-button-light");
 
-                        $("#sButton1").addClass("bg-blue-200");
+                        $("#sButton1").addClass("bg-slider-button-light");
                         cont = 1;
                         break;
                     }
@@ -1028,12 +1028,12 @@
 
                         $("#slider-2").delay(400).fadeIn(400);
 
-                        $("#sButton1").removeClass("bg-blue-200");
-                        $("#sButton3").removeClass("bg-blue-200");
-                        $("#sButton4").removeClass("bg-blue-200");
+                        $("#sButton1").removeClass("bg-slider-button-light");
+                        $("#sButton3").removeClass("bg-slider-button-light");
+                        $("#sButton4").removeClass("bg-slider-button-light");
 
-                        $("#sButton2").addClass("bg-blue-200");
-                        cont = 0;
+                        $("#sButton2").addClass("bg-slider-button-light");
+                        cont = 2;
                         break;
                     }
                     case 2: {
@@ -1043,12 +1043,12 @@
 
                         $("#slider-3").delay(400).fadeIn(400);
 
-                        $("#sButton1").removeClass("bg-blue-200");
-                        $("#sButton2").removeClass("bg-blue-200");
-                        $("#sButton4").removeClass("bg-blue-200");
+                        $("#sButton1").removeClass("bg-slider-button-light");
+                        $("#sButton2").removeClass("bg-slider-button-light");
+                        $("#sButton4").removeClass("bg-slider-button-light");
 
-                        $("#sButton3").addClass("bg-blue-200");
-                        cont = 0;
+                        $("#sButton3").addClass("bg-slider-button-light");
+                        cont = 3;
                         break;
                     }
                     case 3: {
@@ -1058,11 +1058,11 @@
 
                         $("#slider-4").delay(400).fadeIn(400);
 
-                        $("#sButton1").removeClass("bg-blue-200");
-                        $("#sButton2").removeClass("bg-blue-200");
-                        $("#sButton3").removeClass("bg-blue-200");
+                        $("#sButton1").removeClass("bg-slider-button-light");
+                        $("#sButton2").removeClass("bg-slider-button-light");
+                        $("#sButton3").removeClass("bg-slider-button-light");
 
-                        $("#sButton4").addClass("bg-blue-200");
+                        $("#sButton4").addClass("bg-slider-button-light");
                         cont = 0;
                         break;
                     }
@@ -1081,13 +1081,13 @@
 
             $("#slider-1").delay(400).fadeIn(400);
 
-            $("#sButton2").removeClass("bg-blue-200");
-            $("#sButton3").removeClass("bg-blue-200");
-            $("#sButton4").removeClass("bg-blue-200");
+            $("#sButton2").removeClass("bg-slider-button-light");
+            $("#sButton3").removeClass("bg-slider-button-light");
+            $("#sButton4").removeClass("bg-slider-button-light");
 
-            $("#sButton1").addClass("bg-blue-200");
+            $("#sButton1").addClass("bg-slider-button-light");
             reinitLoop(4000);
-            cont = 0
+            cont = 1
         }
 
         function sliderButton2() {
@@ -1098,14 +1098,14 @@
 
             $("#slider-2").delay(400).fadeIn(400);
 
-            $("#sButton1").removeClass("bg-blue-200");
-            $("#sButton3").removeClass("bg-blue-200");
-            $("#sButton4").removeClass("bg-blue-200");
+            $("#sButton1").removeClass("bg-slider-button-light");
+            $("#sButton3").removeClass("bg-slider-button-light");
+            $("#sButton4").removeClass("bg-slider-button-light");
 
-            $("#sButton2").addClass("bg-blue-200");
+            $("#sButton2").addClass("bg-slider-button-light");
 
             reinitLoop(4000);
-            cont = 1
+            cont = 2
         }
 
         function sliderButton3() {
@@ -1115,13 +1115,13 @@
 
             $("#slider-3").delay(400).fadeIn(400);
 
-            $("#sButton1").removeClass("bg-blue-200");
-            $("#sButton2").removeClass("bg-blue-200");
-            $("#sButton4").removeClass("bg-blue-200");
+            $("#sButton1").removeClass("bg-slider-button-light");
+            $("#sButton2").removeClass("bg-slider-button-light");
+            $("#sButton4").removeClass("bg-slider-button-light");
 
-            $("#sButton3").addClass("bg-blue-200");
+            $("#sButton3").addClass("bg-slider-button-light");
             reinitLoop(4000);
-            cont = 0
+            cont = 3
         }
 
         function sliderButton4() {
@@ -1131,20 +1131,20 @@
 
             $("#slider-4").delay(400).fadeIn(400);
 
-            $("#sButton1").removeClass("bg-blue-200");
-            $("#sButton2").removeClass("bg-blue-200");
-            $("#sButton3").removeClass("bg-blue-200");
+            $("#sButton1").removeClass("bg-slider-button-light");
+            $("#sButton2").removeClass("bg-slider-button-light");
+            $("#sButton3").removeClass("bg-slider-button-light");
 
-            $("#sButton4").addClass("bg-blue-200");
+            $("#sButton4").addClass("bg-slider-button-light");
             reinitLoop(4000);
-            cont = 1
+            cont = 0
         }
 
         $(window).ready(function() {
             $("#slider-2").hide();
             $("#slider-3").hide();
             $("#slider-4").hide();
-            $("#sButton1").addClass("bg-blue-200");
+            $("#sButton1").addClass("bg-slider-button-light");
             loopSlider();
         });
 
@@ -1230,7 +1230,7 @@
                 beforeSend: function() {
                     // $("#cost-per-page").html("Loading...")
                     const loading =
-                        '<svg class="inline-block " width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" stroke="#2793d4"><g transform="rotate(0 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(30 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(60 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(90 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(120 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(150 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(180 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(210 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(240 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(270 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(300 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(330 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#15CEF4"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate></rect></g></svg>'
+                        '<svg class="inline-block " width="50px" height="50px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" stroke="#dc2626"><g transform="rotate(0 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.9166666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(30 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8333333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(60 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.75s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(90 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.6666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(120 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5833333333333334s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(150 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.5s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(180 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.4166666666666667s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(210 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.3333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(240 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.25s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(270 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.16666666666666666s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(300 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.08333333333333333s" repeatCount="indefinite"></animate></rect></g><g transform="rotate(330 50 50)"><rect x="47" y="24" rx="3" ry="6" width="6" height="12" fill="#dc2626"><animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite"></animate></rect></g></svg>'
 
                     $("#cost").html(loading)
                 },
