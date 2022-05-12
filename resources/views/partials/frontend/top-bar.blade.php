@@ -4,9 +4,9 @@
             <div class="text-white">
                 <a href="mailto:{{$web_setting->email}}">{{$web_setting->email}}</a>
             </div>
-            <div class="text-white">
+            {{-- <div class="text-white">
                 <a href="https://api.whatsapp.com/send?phone=971547312390{{$web_setting->contact}}" target="_blank">{{ '+'.$web_setting->contact }}</a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

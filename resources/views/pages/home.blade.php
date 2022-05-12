@@ -1,16 +1,18 @@
 @extends('layouts.web')
 
 @section('title', 'Essay Writing IreLand')
-@section('description', 'Want To Improve Your Grades? Contact UAE’s #1 Assignments Help Services and Get Assistance from Cheap Assignment Writing Service UAE and Achieve High Grades.')
+@section('description', 'Want To Improve Your Grades? Contact UAE’s #1 Assignments Help Services and Get Assistance from
+    Cheap Assignment Writing Service UAE and Achieve High Grades.')
 @section('canonical', config('app.app_url'))
 
 @section('content')
 
-<style>
-    *{
-         /* border:1px solid red;  */
-    }
-</style>
+    <style>
+        * {
+            /* border:1px solid red;  */
+        }
+
+    </style>
     {{-- Full Flag with Navbar --}}
     <div class="w-full xl:bg-flag-uae bg-no-repeat bg-contain bg-right 3xl:bg-none">
         {{-- Navbar --}}
@@ -32,48 +34,51 @@
                         </svg>
                     </button>
                 </div>
-                <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <nav :class="{ 'flex': open, 'hidden': !open }"
+                    class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 
-                    <a href="{{route('home')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">Home</a>
+                    <a href="{{ route('home') }}" class="block nav-bar-items py-2 md:mx-2 px-5">Home</a>
 
-                    <a href="{{route('about')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">About</a>
-
+                    <a href="{{ route('about') }}" class="block nav-bar-items py-2 md:mx-2 px-5">About</a>
+{{-- 
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                        <button @click="open = !open" class="block w-full text-left font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">
+                        <button @click="open = !open" class="block w-full text-left nav-bar-items py-2 md:mx-2 px-5">
                             <span>Services</span>
-                            <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
+                            <svg fill="currentColor" viewBox="0 0 20 20" :class="{ 'rotate-180': open, 'rotate-0': !open }"
                                 class="inline w-4 h-4 ml-1 transition-transform duration-200 transform md:-mt-1">
                                 <path fill-rule="evenodd"
                                     d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
                                     clip-rule="evenodd"></path>
                             </svg>
                         </button>
-                        <div x-show="open"
-                            x-transition:enter="transition ease-out duration-100"
+                        <div x-show="open" x-transition:enter="transition ease-out duration-100"
                             x-transition:enter-start="transform opacity-0 scale-95"
                             x-transition:enter-end="transform opacity-100 scale-100"
                             x-transition:leave="transition ease-in duration-75"
                             x-transition:leave-start="transform opacity-100 scale-100"
                             x-transition:leave-end="transform opacity-0 scale-95"
-                            class="hidden absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-40" :class="{'hidden': !open}">
+                            class="hidden absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48 z-40"
+                            :class="{ 'hidden': !open }">
                             <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
                                 @if (!empty($services))
                                     @foreach ($services as $service)
                                         <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                                        href="{{ route('services.show', $service->slug) }}">{{ $service->name }}</a>
+                                            href="{{ route('services.show', $service->slug) }}">{{ $service->name }}</a>
                                     @endforeach
                                 @endif
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
-                    <a href="{{route('contact')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">Contact</a>
+                    <a href="{{ route('contact') }}" class="block nav-bar-items py-2 md:mx-2 px-5">Contact</a>
 
-                    <div class="flex flex-col md:flex-row  md:items-center my-3 mx-3 lg:my-0 md:space-x-1 space-y-2 md:space-y-0 ">
-                        <a href="{{route('reviews')}}" class="btn-primary">
+                    <div
+                        class="flex flex-col md:flex-row  md:items-center my-3 mx-3 lg:my-0 md:space-x-1 space-y-2 md:space-y-0 ">
+                        <a href="{{ route('reviews') }}" class="btn-primary">
                             Reviews
                         </a>
-                        <a href="{{route('order')}}" class="btn-primary-outline break-normal" style="background-color: rgb(255, 255, 255, 0.6);">
+                        <a href="{{ route('order') }}" class="btn-primary-outline break-normal"
+                            style="background-color: rgb(255, 255, 255, 0.6);">
                             Order Now
                         </a>
                     </div>
@@ -87,30 +92,32 @@
                     <div class="relative space-y-4">
                         <div class="mx-2 text-center lg:text-left ">
                             <h1 class="hero-heading mb-4 text-center">
-                                Cheap Assignment Help UAE
+                                Best Essay Writing Service Ireland
                             </h1>
                             <p class="text-gray-500 text-xl md:text-2xl lg:text-lg pb-4">
-                                We provide assignment services by top-rated writers. Guaranteed Success, Instant help and Cheap
-                                Prices. Professional academic help is available for all students in UAE.
+                                Get the results you want by taking help from the top Irish essay writers. No more stress and
+                                chaos at the last moment. Professional Assistance & Instant Academic Support!
                             </p>
                         </div>
-                        <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-6 p-1">
+                        <div
+                            class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-6 p-1">
                             <div class="space-y-1">
-                                <div class="text-primary-light text-6xl font-bold"><span id="count-up-a" class="counterup"
-                                        data-value="98.2">0</span>.2%</div>
+                                <div class="text-primary-light text-6xl font-bold"><span id="count-up-a"
+                                        class="counterup" data-value="98.2">0</span>.2%</div>
                                 <div class="text-lg text-center">
                                     Orders Arrive Timely
                                 </div>
                             </div>
                             <div class="space-y-1">
-                                <div class="text-primary-light text-6xl font-bold"><span id="count-up-b" class="counterup"
-                                        data-value="91">0</span>.0%</div>
+                                <div class="text-primary-light text-6xl font-bold"><span id="count-up-b"
+                                        class="counterup" data-value="91">0</span>.0%</div>
                                 <div class="text-lg text-center">
                                     Report Better Grades
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-col bg-white border border-gray-200 shadow-lg items-center sm:flex-row sm:justify-center md:flex-row lg:flex-row space-x-4 py-2">
+                        <div
+                            class="flex flex-col bg-white border border-gray-200 shadow-lg items-center sm:flex-row sm:justify-center md:flex-row lg:flex-row space-x-4 py-2">
                             <div class="">
                                 <img src="../imgs/reviewsbank.png" alt="UAE Flag" class="mx-auto h-10">
                                 <span
@@ -119,23 +126,23 @@
                                     <li class="mr-1">4.9</li>
                                     <li class="my-auto text-yellow-500">
                                         <div class="flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
@@ -159,9 +166,9 @@
                                         </linearGradient>
                                     </defs>
                                     <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
-                                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
-                                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
-                                        style="mix-blend-mode: normal">
+                                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                        stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none"
+                                        text-anchor="none" style="mix-blend-mode: normal">
                                         <path d="M0,172v-172h172v172z" fill="none"></path>
                                         <g fill="url(#color-1_8ggStxqyboK5_gr1)">
                                             <path
@@ -176,23 +183,23 @@
                                     <li class="mr-1">4.9</li>
                                     <li class="my-auto text-yellow-500">
                                         <div class="flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
@@ -206,30 +213,49 @@
                                 </ul>
                             </div>
                             <div class="">
-                                <svg class="h-8 mx-auto my-1" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.54 155.41"><defs><style>.cls-1{fill:#ef6b25;}.cls-2{fill:#fff;}</style></defs><title>Artboard 3ldpi</title><path class="cls-1" d="M140.47,124.23,171.54,155c-2.4.18-3.55.34-4.7.34-30,0-59.89.09-89.84,0-37.71-.13-70.89-29-76.19-66.22a77.83,77.83,0,0,1,153.32-26.6c4.17,21.22,0,40.78-11.9,58.78C141.61,122.25,141.07,123.24,140.47,124.23ZM47.56,114.1c.06,3.42,2.84,5,6.32,3.27,6.63-3.36,13.26-6.74,19.69-10.45,3.15-1.83,5.66-1.65,8.72.09,6.2,3.54,12.53,6.86,18.94,10,1.46.71,4.11,1.11,5,.31,1.16-1,1.71-3.5,1.47-5.2-1-7.18-2.4-14.31-3.7-21.45a7.45,7.45,0,0,1,2.6-7.56c5.42-4.88,10.61-10,15.68-15.25,1.13-1.16,2.19-3.44,1.78-4.72s-2.61-2.56-4.2-2.84C112.27,59,104.6,58.11,97,56.72a7.57,7.57,0,0,1-4.73-3.24c-3.36-6.12-6.14-12.56-9.46-18.71-1.12-2.07-3.23-3.6-4.89-5.38-1.68,1.72-3.84,3.19-5,5.23-3.28,6-6.23,12.2-9.16,18.38-1.12,2.38-2.44,3.66-5.36,4-7.51.79-15,2-22.43,3.34-1.62.28-4,1.48-4.31,2.67-.35,1.49.69,3.82,1.88,5.07,4.73,5,9.57,9.87,14.75,14.35,3.27,2.82,3.93,5.66,3,9.73C49.84,99.35,48.83,106.69,47.56,114.1Z"/><path class="cls-2" d="M47.56,114.1c1.27-7.41,2.28-14.75,3.85-22,.88-4.07.22-6.91-3-9.73C43.18,77.91,38.34,73,33.61,68c-1.19-1.25-2.23-3.58-1.88-5.07C32,61.78,34.42,60.58,36,60.3,43.48,59,51,57.75,58.47,57c2.92-.3,4.24-1.58,5.36-4,2.93-6.18,5.88-12.38,9.16-18.38,1.12-2,3.28-3.51,5-5.23,1.66,1.78,3.77,3.31,4.89,5.38,3.32,6.15,6.1,12.59,9.46,18.71A7.57,7.57,0,0,0,97,56.72c7.57,1.39,15.24,2.25,22.83,3.6,1.59.28,3.77,1.54,4.2,2.84s-.65,3.56-1.78,4.72C117.21,73.12,112,78.25,106.6,83.13a7.45,7.45,0,0,0-2.6,7.56c1.3,7.14,2.69,14.27,3.7,21.45.24,1.7-.31,4.17-1.47,5.2-.89.8-3.54.4-5-.31-6.41-3.16-12.74-6.48-18.94-10-3.06-1.74-5.57-1.92-8.72-.09-6.43,3.71-13.06,7.09-19.69,10.45C50.4,119.14,47.62,117.52,47.56,114.1Z"/></svg>
+                                <svg class="h-8 mx-auto my-1" id="Layer_1" data-name="Layer 1"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 171.54 155.41">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #ef6b25;
+                                            }
+
+                                            .cls-2 {
+                                                fill: #fff;
+                                            }
+
+                                        </style>
+                                    </defs>
+                                    <title>Artboard 3ldpi</title>
+                                    <path class="cls-1"
+                                        d="M140.47,124.23,171.54,155c-2.4.18-3.55.34-4.7.34-30,0-59.89.09-89.84,0-37.71-.13-70.89-29-76.19-66.22a77.83,77.83,0,0,1,153.32-26.6c4.17,21.22,0,40.78-11.9,58.78C141.61,122.25,141.07,123.24,140.47,124.23ZM47.56,114.1c.06,3.42,2.84,5,6.32,3.27,6.63-3.36,13.26-6.74,19.69-10.45,3.15-1.83,5.66-1.65,8.72.09,6.2,3.54,12.53,6.86,18.94,10,1.46.71,4.11,1.11,5,.31,1.16-1,1.71-3.5,1.47-5.2-1-7.18-2.4-14.31-3.7-21.45a7.45,7.45,0,0,1,2.6-7.56c5.42-4.88,10.61-10,15.68-15.25,1.13-1.16,2.19-3.44,1.78-4.72s-2.61-2.56-4.2-2.84C112.27,59,104.6,58.11,97,56.72a7.57,7.57,0,0,1-4.73-3.24c-3.36-6.12-6.14-12.56-9.46-18.71-1.12-2.07-3.23-3.6-4.89-5.38-1.68,1.72-3.84,3.19-5,5.23-3.28,6-6.23,12.2-9.16,18.38-1.12,2.38-2.44,3.66-5.36,4-7.51.79-15,2-22.43,3.34-1.62.28-4,1.48-4.31,2.67-.35,1.49.69,3.82,1.88,5.07,4.73,5,9.57,9.87,14.75,14.35,3.27,2.82,3.93,5.66,3,9.73C49.84,99.35,48.83,106.69,47.56,114.1Z" />
+                                    <path class="cls-2"
+                                        d="M47.56,114.1c1.27-7.41,2.28-14.75,3.85-22,.88-4.07.22-6.91-3-9.73C43.18,77.91,38.34,73,33.61,68c-1.19-1.25-2.23-3.58-1.88-5.07C32,61.78,34.42,60.58,36,60.3,43.48,59,51,57.75,58.47,57c2.92-.3,4.24-1.58,5.36-4,2.93-6.18,5.88-12.38,9.16-18.38,1.12-2,3.28-3.51,5-5.23,1.66,1.78,3.77,3.31,4.89,5.38,3.32,6.15,6.1,12.59,9.46,18.71A7.57,7.57,0,0,0,97,56.72c7.57,1.39,15.24,2.25,22.83,3.6,1.59.28,3.77,1.54,4.2,2.84s-.65,3.56-1.78,4.72C117.21,73.12,112,78.25,106.6,83.13a7.45,7.45,0,0,0-2.6,7.56c1.3,7.14,2.69,14.27,3.7,21.45.24,1.7-.31,4.17-1.47,5.2-.89.8-3.54.4-5-.31-6.41-3.16-12.74-6.48-18.94-10-3.06-1.74-5.57-1.92-8.72-.09-6.43,3.71-13.06,7.09-19.69,10.45C50.4,119.14,47.62,117.52,47.56,114.1Z" />
+                                </svg>
                                 <span
                                     class="mb-2 sm:mb-0 md:mb-2 lg:mb-0 focus:outline-none hover:text-blue-400 text-lg  ml-4">Sitejabbar</span>
                                 <ul class="flex justify-center">
                                     <li class="mr-1">4.9</li>
                                     <li class="my-auto text-yellow-500">
                                         <div class="flex">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500" fill="none"
-                                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 fill-yellow-500"
+                                                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                                 <path stroke-linecap="round" stroke-linejoin="round"
                                                     d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
                                             </svg>
@@ -247,10 +273,11 @@
                 </div>
                 <div class="w-full lg:w-1/2 bg-flag-uae xl:bg-none bg-no-repeat bg-contain bg-center ">
                     <div class="max-w-xs m-auto mt-20" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
-                        <h4 class="font-bold title-font text-center text-2xl bg-gradient-to-r from-primary-light to-primary-dark text-white py-3 px-7 rounded-t-lg">
+                        <h4 class="font-bold title-font text-center text-2xl primary-bar text-white py-3 px-7 rounded-t-lg">
                             Calculate Your Price
                         </h4>
-                        <div class="shadow-md rounded-b-lg p-5 flex flex-col md:ml-auto w-full  border border-gray-200" style="background-color: rgb(255, 255, 255, 0.6);">
+                        <div class="shadow-md rounded-b-lg p-5 flex flex-col md:ml-auto w-full  border border-gray-200"
+                            style="background-color: rgb(255, 255, 255, 0.6);">
                             <div class="mb-2">
                                 <select name="paper_type"
                                     class="w-full text-gray-700 rounded border border-gray-300 bg-white  focus:border-primary-light focus:ring-2  text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out @error('paper_type') border-red-500 @enderror">
@@ -312,7 +339,7 @@
                             </div>
 
                             <h4 class="my-4 text-center text-1xl text-red-600 font-bold uppercase ">
-                                Pricing: <span class="text-3xl"> <span id="cost">0</span> AED </span>
+                                Pricing: <span class="text-3xl"> <span id="cost">0</span> € </span>
                             </h4>
 
                             <a href="{{ route('order') }}" class="btn-primary">
@@ -332,26 +359,26 @@
                 TRUSTED BY 300,000+ <br> STUDENTS OF :
             </span>
             <div class="grid grid-cols-5 md:grid-cols-10 py-4 px-3">
-                <div data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="200"><img src="../imgs/at1.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125" /></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="400"><img src="../imgs/at2.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="600"><img src="../imgs/at3.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="800"><img src="../imgs/at4.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1000"><img src="../imgs/at5.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1200"><img src="../imgs/at6.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1400"><img src="../imgs/at7.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1600"><img src="../imgs/at8.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="1800"><img src="../imgs/at9.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
-                <div  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="2000"><img src="../imgs/at10.jpg" alt="Student of University"
-                        class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="200"><img src="{{ asset('imgs/ire-unis/irreland-uni-7.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125" /></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"><img src="{{ asset('imgs/ire-unis/ui-7.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600"><img src="{{ asset('imgs/ire-unis/ui-2.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800"><img src="{{ asset('imgs/ire-unis/iu-4.svg') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"><img src="{{ asset('imgs/ire-unis/irreland-uni-1.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1200"><img src="{{ asset('imgs/ire-unis/irreland-uni-2.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1400"><img src="{{ asset('imgs/ire-unis/irreland-uni-3.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1600"><img src="{{ asset('imgs/ire-unis/irreland-uni-4.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1800"><img src="{{ asset('imgs/ire-unis/irreland-uni-5.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
+                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="2000"><img src="{{ asset('imgs/ire-unis/irreland-uni-6.png') }}"
+                        alt="Student of University" class="md:p-0 md:w-20 transform transition hover:scale-125"></div>
             </div>
         </div>
     </div>
@@ -364,10 +391,11 @@
 
         <div class="px-2 py-6 lg:px-0 md:w-2/3">
             <h2 class="main-heading text-center md:text-left">
-                Why Only Our Cheap Assignment Writing Service UAE?
+                Hey, Can You Write My Essay For Me Ireland?
             </h2>
             <p class="text-secondary-dark text-sm pt-3 text-center md:text-left">
-                If you’re confused with so many options available online, here are 4 reasons to choose us:
+                You must be tired of searching this question on the internet? Or might be frustrated for not getting the
+                specific help, right?
             </p>
             <div class="space-y-4 mt-2">
                 <div class="flex items-center group">
@@ -377,10 +405,12 @@
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
-                        <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">In-depth Research</p>
+                        {{-- <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">In-depth Research</p> --}}
                         <p class="text-secondary-dark text-sm pt-1">
-                            The reason why our academic help is constantly in need for students is that our papers are
-                            backed by strong research.
+                            Well, now is the right time to end all your worries as we provide you with the best Irish
+                            writing services to get you going in your academic career. No matter if you’re short of time or
+                            completely unaware of the essay writing format or research, our writers can help you pass the
+                            challenges.
                         </p>
                     </div>
                 </div>
@@ -391,15 +421,15 @@
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
-                        <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">Experienced Writers</p>
+                        {{-- <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">Experienced Writers</p> --}}
                         <p class="text-secondary-dark text-sm pt-1">
-                            Since we strive for excellence, we provide hands-on training to our writers to make sure they
-                            deliver the best. All the writers in our team are highly experienced, certified, and works to
-                            add value to students’ career.
+                            Whether it's argumentative, short, descriptive, or persuasive essays, you can seek help from our
+                            experts and learn to write with flow. And the best part? Our prices are economical for students
+                            and won’t burden your pockets regardless of the type of essay you choose.
                         </p>
                     </div>
                 </div>
-                <div class="flex items-center group">
+                {{-- <div class="flex items-center group">
                     <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -413,8 +443,8 @@
                             counsellors and writers who are available to guide you.
                         </p>
                     </div>
-                </div>
-                <div class="flex items-center group">
+                </div> --}}
+                {{-- <div class="flex items-center group">
                     <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -427,7 +457,7 @@
                             best help at cheap prices.
                         </p>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
@@ -443,8 +473,7 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-5 xl:mx-10 gap-y-3">
             <div data-aos="fade-up" data-aos-duration="1000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
-                <div
-                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     College
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -459,8 +488,7 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="2000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
-                <div
-                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Undergraduate
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -475,8 +503,7 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="3000"
                 class="sm:col-span-2 lg:col-span-1 rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
-                <div
-                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Master's
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -491,8 +518,7 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="4000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
-                <div
-                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Ph.D.
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -507,8 +533,7 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="5000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
-                <div
-                    class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
+                <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Admission Essay
                 </div>
                 <div class="p-6 border-3 border-cyan-400">
@@ -536,10 +561,10 @@
 
     {{-- Features --}}
     <div class="">
-        
+
         <div class="container mx-auto items-center justify-center py-4">
 
-            <h4 class="main-heading text-center my-4"> Features </h4>
+            <h4 class="main-heading text-center my-4 lg:my-4 lg:mb-8"> Features </h4>
 
             <div class="grid sm:grid-cols-2 xl:grid-cols-5 xl:mx-10 gap-y-6">
                 <div class="relative group mx-auto" data-aos="fade-down" data-aos-duration="1000">
@@ -661,11 +686,11 @@
     <div class=" container mx-auto items-center justify-center relative">
 
         <h3 class="main-heading text-center my-4">
-            Get Any Kind of Help with Assignment Help Dubai and Enjoy the Experience
+            Looking to Buy An Essay Ireland?
         </h3>
 
-        <p class="my-4 text-center text-secondary">
-            We offer all kinds of assignment services but to mention a few, the list includes:
+        <p class="my-4 text-center text-secondary text-lg font-semibold">
+            Here are the types of essays we provide:
         </p>
 
 
@@ -673,94 +698,94 @@
             class="bg-none lg:bg-leftwaves lg:h-[50rem] lg:bg-left lg:bg-contain lg:bg-no-repeat lg:block lg:absolute lg:top-32 lg:right-0 lg:-left-11 bottom-0 -z-10 ">
         </div>
         <div
-            class=" bg-none lg:bg-rightwaves lg:h-[30rem] lg:bg-right lg:bg-contain lg:bg-no-repeat lg:block lg:absolute lg:top-20 lg:-right-[32.75px] lg:left-0 bottom-0 -z-10 "> 
+            class=" bg-none lg:bg-rightwaves lg:h-[30rem] lg:bg-right lg:bg-contain lg:bg-no-repeat lg:block lg:absolute lg:top-20 lg:-right-[32.75px] lg:left-0 bottom-0 -z-10 ">
         </div>
         {{--  --}}
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:px-28 xl:grid-cols-3 py-5 ">
 
-            <div class=" border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
-                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Dissertation Help</h4>
+            <div class=" border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 gr-border  md:p-4">
+                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Descriptive Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    Done with your dissertation but still not satisfied or looking for a writer to write dissertation from
-                    scratch? Our dissertation writers are here to assist to make your paper outstanding and full of
-                    excellence.
+                    In descriptive essays, you need to describe an object, emotion or an experience in detail. If you find
+                    it difficult to paint a perfect picture through descriptive essays, we are available to assist.
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 gr-border md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">
-                    <a href="{{route('services.show', 'thesis-writing')}}">
-                        Thesis Writing
+                    <a href="{{ route('services.show', 'thesis-writing') }}">
+                        Narrative Essays
                     </a>
                 </h4>
                 <p class="text-gray-700 text-base mb-4">
-                    Regardless of the academic domain in which you’re seeking help, our experts can make the process smooth
-                    for you. Our thesis writers write with an in-depth understanding of the topic to ensure the quality of
-                    your papers.
+                    Writing a narrative essay seems easy on the outside but from the inside, it requires research and a
+                    process. If you’re short of time, our Irish writing services can help you complete it before the
+                    deadline.
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 border-primary-light md:p-4">
-                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Case Study Writing</h4>
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 gr-border md:p-4">
+                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Persuasive Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    Are you about to write a case study? But do you know what it’s meant for? Writing with purpose and
-                    understanding reflects your expertise in the domain. And that’s what our writers deliver. Make your case
-                    studies prolific with our assignment experts.
+                    So you want to persuade your teachers to get good Grades but don’t know how to write a persuasive essay?
+                    How about taking help from professionals to land the desired results?
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
-                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Admission Essay Help</h4>
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 gr-border md:p-4">
+                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">MBA Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    No more pitying off your situation just because you’re struggling to write admission essays. Get the job
-                    done by taking help from reliable experts to get admission to your dream university.
+                    You can’t afford to neglect an MBA essay. It unlocks new opportunities and also helps to kickstart your
+                    career. So, instead of looking for someone to buy an essay Ireland, it’s time to make it unique by
+                    taking help from experts.
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 border-primary-light md:p-4">
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 gr-border md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">
-                    <a href="{{route('services.show', 'essay-writing')}}">
-                        Essay Writing
+                    <a href="{{ route('services.show', 'essay-writing') }}">
+                        Argumentative Essays
                     </a>
                 </h4>
                 <p class="text-gray-700 text-base mb-4">
-                    An essay isn’t the culmination of words but is the sum total of research, thoughts, opinions, ideas,
-                    adept writing, and formatting skills. Our essay writers serve all these factors to make sure you get the
-                    best results with your essays.
+                    Argumentative essays not only require research but also impeccable writing skills that can convince the
+                    readers on your point. Our argumentative essay services perfectly cater to its purpose.
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 border-primary-light md:p-4">
-                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Coursework Help</h4>
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-2 gr-border md:p-4">
+                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Admission Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    Instead of making the coursework a headache, how about taking help from the writers who are already
-                    experts in it? Our custom coursework writing help is best to take yourself out from the chaos and get
-                    closer to the destiny you have always imagined.
+                    A good admission essay can help you spare all the troubles and can put you in peace. It also counts in
+                    your educational performance. That’s why it’s always best to seek professional assistance to stand ahead
+                    and get exceptional results.
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 md:p-4 border-primary-light">
-                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">Homework Help</h4>
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 md:p-4 gr-border">
+                <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">College Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    Whether you need homework help in accounting, mathematics, English, electronics, or nursing, our
-                    assignment maker UAE are the best to seek help in this case.
+                    Struggling to write a college essay that can work wonders? Our college essay writing service is here to
+                    take you out of the challenges. With a blend of story-telling and creativity, we create essays that
+                    maximize your performance.
                 </p>
             </div>
 
-            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 border-primary-light md:p-4">
-                <h4 class="text-primary-dark font-bold text-xl py-3 pt-2">Online Help</h4>
+            <div class="border-0 px-9 border-b-2 sm:px-14 md:border-b-0 md:border-r-2 gr-border md:p-4">
+                <h4 class="text-primary-dark font-bold text-xl py-3 pt-2">Analytical Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    It becomes difficult to complete your paper without the availability of the best assignment website. But
-                    with us, it’s not only easy to contact us but also to get urgent help online.
+                    An analytical essay answers the How or Why of the question. Without strong research skills, it’s
+                    impossible to draw a strong analysis. Our top-rated Irish writers reduce your workload by taking
+                    responsibility on their shoulders.
                 </p>
             </div>
 
             <div class="border-0 px-9 sm:px-14 md:p-4">
-                <h4 class="text-primary-dark font-bold text-xl py-3 pt-2">Academic Writing Help</h4>
+                <h4 class="text-primary-dark font-bold text-xl py-3 pt-2">Cause and Effect Essays</h4>
                 <p class="text-gray-700 text-base mb-4">
-                    Save yourself from the last-minute tension by letting us do the job. Seeking cheap assignment writing
-                    services UAE won’t only ease your struggle but also give you a way forward to focus on other important
-                    tasks.
+                    Due to lack of time and motivation students are unable to come up with a quality cause and effect essay.
+                    We have been helping students in overcoming this problem. If you’re in the same boat, we are only an
+                    order away.
                 </p>
             </div>
 
@@ -769,29 +794,38 @@
     </div>
 
     {{-- Essay Writing Help --}}
-    <div class="container bg-transparent mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:px-28 xl:grid-cols-2 py-5 ">
+    <div
+        class="container bg-transparent mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:px-28 xl:grid-cols-2 py-5 ">
 
         <div class="my-auto" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
-            <img src="../imgs/carr.svg" alt="mobile" >
+            <img src="../imgs/carr.svg" alt="mobile">
         </div>
 
         <div class="p-10 text-center md:text-left" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
             <h3 class="main-heading my-4">
-                No More Struggles to Meet Deadlines with Our Assignment Writing Help in Dubai
+                Why Should You Take Your First Chance on Our Irish Writing Services?
             </h3>
             <p class="text-secondary-dark text-sm py-7 leading-6">
-                Time to say Goodbye to all the academic chaos. And time to say Hi to the best assignment writing services in
-                UAE. You heard it right. It’s been a decade providing assignment help online and to be honest, we don’t have
-                a single disappointed customer in our history. Whether it's about assistance or writing custom papers from
-                scratch, talk to our experts and you’d be amazed to receive our services.
+                We understand when you search on the internet “write my essay for me Ireland” you come across a lot of
+                writing websites that claim results and a myriad of services. And you got confused between the many options.
+                But when you find us for the first time, why should you choose us?
                 <br>
                 <br>
-                We understand that academic assignments can be annoying especially when you don’t have any immediate
-                support. Running at the eleventh hour, rushing to meet the deadlines and panicking can add more to the
-                stress. That’s where our assignment writing in Dubai come to the rescue. From coursework to PPT writing,
-                academic help, thesis, dissertation or essays, you will always find us at your service at the hour of need.
-                Since it's not easy to connect with experts when you’re low on budget, we ensure the best solution providers
-                when it comes to cheap assignment services online.
+                We are one of the emerging essay writing websites in Ireland whose only focus is Quality and Customer
+                Satisfaction. We can neither afford nor intend to disappoint our customers because when they invest money
+                whether little or too much, they expect results. And that’s why our sole purpose is to deliver Quality.
+                <br>
+                <br>
+                Secondly, students already struggle with assignments and writing challenges. To disappoint them means to add
+                to their stress. And we don’t want to do that as our aim is to relieve their burden.
+                <br>
+                <br>
+                Now, when you hire us, you can put yourself at ease because your Success is also our Success. To fulfil, we
+                give our best no matter if you require our services in Dublin, Galway, Cork, Waterford, Limerick, Belfast or
+                anywhere in Ireland.
+                <br>
+                <br>
+                Still not satisfied? How about trying us with an order?
             </p>
 
             <div class="flex flex-row justify-center ">
@@ -807,7 +841,7 @@
     {{-- Testinomial --}}
     <div class=" border-b-8 border-black mx-auto">
         <h4 class="main-heading text-center my-4">
-            Customer Feedback
+            Customer Reviews
         </h4>
         <div class="container mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-2 pt-5">
             <div class="mx-auto align-baseline" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
@@ -822,9 +856,10 @@
                             <div class=" h-auto text-black py-10 px-10 object-fill">
                                 <div class="">
                                     {{-- <p class="font-bold text-sm uppercase">Services</p> --}}
-                                    <p class="text-3xl font-bold my-2">Maryam</p>
+                                    <p class="text-3xl font-bold my-2">Clara</p>
                                     <p class="text-md my-3 ">
-                                        I was searching for assignment writing help in Dubai. Thankfully I got them and they gave me instant support. I’m happy to know about them. I will recommend this to my friends as well so they can also pass their difficult phase smoothly
+                                        They helped me with one of the most complicated essays that I was struggling to
+                                        write for a month. They are legit and authentic essay writers.
                                     </p>
                                 </div>
                             </div>
@@ -833,9 +868,11 @@
 
                         <div id="slider-2" class=" shadow-2xl mx-4 md:mx-auto">
                             <div class=" h-auto text-black py-10 px-10 object-fill">
-                                <p class="text-3xl font-bold my-2">Abdul Sultan</p>
+                                <p class="text-3xl font-bold my-2">Nicole</p>
                                 <p class="text-md my-3 ">
-                                     Their writer followed my instructions and deliver authentic, great work.
+                                    I was very worried because of the short deadline. I have never used any online service
+                                    before. One of my friends recommended them and I must say they came as a saviour in the
+                                    last hour. I’m still very grateful to them.
                                 </p>
                             </div>
                             <br>
@@ -843,9 +880,9 @@
 
                         <div id="slider-3" class=" shadow-2xl mx-4 md:mx-auto">
                             <div class=" h-auto text-black py-10 px-10 object-fill">
-                                <p class="text-3xl font-bold my-2">Abdul Malik</p>
+                                <p class="text-3xl font-bold my-2">Tara Cole</p>
                                 <p class="text-md my-3 ">
-                                     This is a legitimate website. I have used it multiple times for my assignments.
+                                    Superb formatting and the flawless writing style of their writers. Loved their service!
                                 </p>
                             </div>
                             <br>
@@ -853,9 +890,9 @@
 
                         <div id="slider-4" class=" shadow-2xl mx-4 md:mx-auto">
                             <div class=" h-auto text-black py-10 px-10 object-fill">
-                                <p class="text-3xl font-bold my-2">Fatima Sultan</p>
+                                <p class="text-3xl font-bold my-2">Liyah</p>
                                 <p class="text-md my-3 ">
-                                     Hired them for my English essays and research work, I must say they exceeded my expectations.
+                                    The writer did an excellent job on my MBA essay. He also exceeded my expectations.
                                 </p>
                             </div>
                             <br>
@@ -895,82 +932,79 @@
                 <div class="w-full">
                     <details class="mb-3 relative">
                         <summary
-                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-cyan-500 text-base py-2 px-3 leading-8 mb-1">
-                            1. Do you write assignments from scratch or reuse the previous ones?
+                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-amber-500 text-base py-2 px-3 leading-8 mb-1">
+                            1. Do you provide original and unique essay Ireland?
                         </summary>
                         <div class="bg-white p-4 rounded-sm">
-                            <span class="text-gray-500 text-sm">
-                                At assignmentshelp.ae every order is served from the scratch. We write assignments specific
-                                to your requirements and never reuse any past assignments. Also, experts vary according to
-                                the topics to make the best assignment help online available for you.
+                            <span class="text-gray-900 text-sm">
+                                A. Yes, all the time! Reusing old essays and internet templates isn’t our business model. We
+                                have expert writers who write your essays from scratch and according to your specific
+                                requirements. All essays are based on strong research, essay structure and impeccable
+                                writing skills.
                             </span>
                         </div>
                     </details>
                     <details class="mb-4 relative">
                         <summary
-                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-cyan-500 text-base py-2 px-3 leading-8 mb-1">
-                            2. How many revisions do you provide in an assignment?
+                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-amber-500 text-base py-2 px-3 leading-8 mb-1">
+                            2. Will you protect my identity?
                         </summary>
                         <div class="bg-white p-4 rounded-sm">
-                            <span class="text-gray-500 text-sm">
-                                First, we make sure our writing services in UAE cater to all types of requirements with
-                                perfection. Still, if there’s room for improvement (that doesn’t happen usually) we can
-                                revise and edit the papers for you. In total, we offer 3 revisions to gain the satisfaction
-                                you expect from us.
+                            <span class="text-gray-900 text-sm">
+                                A. Yes, of course! We don’t share our client's information with any third party or even for
+                                advertisement. Your personal information including your name, email, and contact details
+                                remain with us only. We only use it to maintain the backlog of the orders.
                             </span>
                         </div>
                     </details>
                     <details class="mb-4 relative">
                         <summary
-                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-cyan-500 text-base py-2 px-3
+                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-amber-500 text-base py-2 px-3
                             leading-8 mb-1">
-                            3. Is this the best assignment website that’s also affordable?
+                            3. Do you have a secure payment method?
                         </summary>
                         <div class="bg-white p-4 rounded-sm">
-                            <span class="text-gray-500 text-sm">
-                                This is for you to decide but as compared to other websites our prices are reasonably low.
-                                And when it terms to quality and research-driven assignments, we must say our writers' rules
-                                this feature. It's the results and success that brings the customers again to our website.
+                            <span class="text-gray-900 text-sm">
+                                A. Yes, we have secure payment methods for our online essay writing help. Also, we offer
+                                different payment methods like Payoneer, PayPal, Western Union, payment through Visa card,
+                                and more. You can choose accordingly.
                             </span>
                         </div>
                     </details>
                     <details class="mb-4 relative">
                         <summary
-                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-cyan-500 text-base py-2 px-3 leading-8 mb-1">
-                            4. Will my identity remain private with you?
+                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-amber-500 text-base py-2 px-3 leading-8 mb-1">
+                            4. Can you write my essay Ireland in 1 hour?
                         </summary>
                         <div class="bg-white p-4 rounded-sm">
-                            <span class="text-gray-500 text-sm">
-                                Yes, all the time. You can trust us for that. We only use your information to complete your
-                                assignments and deliver them on time. We neither disclose your information to anyone nor use
-                                it for advertisement. That’s our guarantee!
+                            <span class="text-gray-900 text-sm">
+                                A. If you need it on an urgent basis and the paper isn’t too lengthy then absolutely we can
+                                help you out. But serving on an immediate basis also requires an additional cost.
                             </span>
                         </div>
                     </details>
                     <details class="mb-4 relative">
                         <summary
-                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-cyan-500 text-base py-2 px-3 leading-8 mb-1">
-                            5. Do you guarantee quality with cheap assignment help UAE?
+                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-amber-500 text-base py-2 px-3 leading-8 mb-1">
+                            5. How much do you charge for an essay?
                         </summary>
                         <div class="bg-white p-4 rounded-sm">
-                            <span class="text-gray-500 text-sm">
-                                Providing cheap services doesn’t mean we compromise on quality. Both remain equal for us.
-                                The mission is to help students relieve their stress without letting them pay a lot for
-                                assignment writing services Dubai.
+                            <span class="text-gray-900 text-sm">
+                                A. Essay charges depend on the nature of the topic and also its length and requirements.
+                                However, the basic price starts from $8 only.
                             </span>
                         </div>
                     </details>
                     <details class="mb-4 relative">
                         <summary
-                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-cyan-500 text-base py-2 px-3 leading-8 mb-1">
-                            6. Do you have any expert assignment maker Dubai online in your team?
+                            class="cursor-pointer font-semibold w-full text-gray-600 rounded border border-gray-300 bg-white  focus:border-amber-500 text-base py-2 px-3 leading-8 mb-1">
+                            6. I have written my essay myself. Can you proofread it?
                         </summary>
                         <div class="bg-white p-4 rounded-sm">
-                            <span class="text-gray-500 text-sm">
-                                We have experts available on different topics, you name it and we will connect you with
-                                them. If you’re looking specifically for expert assignment writers then we are the go-to
-                                palace for you. From PhD writers to dissertation, academic, essays, and assignments, our
-                                team serves in all categories.
+                            <span class="text-gray-900 text-sm">
+                                A. Sure! We also provide proofreading and editing services for students who have done their
+                                essays themselves and want some professional assistance on them. We can further polish and
+                                enhance its quality.
                             </span>
                         </div>
                     </details>
@@ -983,7 +1017,7 @@
     {{-- Help --}}
     <div class=" bg-primary-dark text-center py-6">
         <h4 class="font-bold text-white text-3xl text-center py-4 px-3">
-            Get Your Troubles Sorted with our Leading Assignment Writing Dubai UAE
+            Ready to Get Your Essays from the Best Essay Writing Service Ireland?
         </h4>
 
         <a href="{{ route('order') }}"
@@ -992,7 +1026,7 @@
         </a>
 
         <p class="text-white text-center text-lg py-4">
-            Worrying about grades is outdated, seeking professional help is a forward-looking approach, remember it.
+            Let’s discuss it today. Time to seek your academic success!
         </p>
     </div>
 @endsection
@@ -1003,6 +1037,7 @@
     {{-- Looper Js --}}
     <script>
         var cont = 0;
+
         function loopSlider() {
             var sliders = setInterval(function() {
                 switch (cont) {
@@ -1086,8 +1121,9 @@
             $("#sButton4").removeClass("bg-slider-button-light");
 
             $("#sButton1").addClass("bg-slider-button-light");
-            reinitLoop(4000);
             cont = 1
+            reinitLoop(4000);
+
         }
 
         function sliderButton2() {
@@ -1103,9 +1139,9 @@
             $("#sButton4").removeClass("bg-slider-button-light");
 
             $("#sButton2").addClass("bg-slider-button-light");
-
-            reinitLoop(4000);
             cont = 2
+            reinitLoop(4000);
+
         }
 
         function sliderButton3() {
@@ -1120,8 +1156,9 @@
             $("#sButton4").removeClass("bg-slider-button-light");
 
             $("#sButton3").addClass("bg-slider-button-light");
-            reinitLoop(4000);
             cont = 3
+            reinitLoop(4000);
+
         }
 
         function sliderButton4() {
@@ -1136,8 +1173,9 @@
             $("#sButton3").removeClass("bg-slider-button-light");
 
             $("#sButton4").addClass("bg-slider-button-light");
-            reinitLoop(4000);
             cont = 0
+            reinitLoop(4000);
+
         }
 
         $(window).ready(function() {
@@ -1152,7 +1190,6 @@
             clearInterval(sliders);
             setTimeout(loopSlider(), time);
         }
-
     </script>
     {{-- Count Up --}}
     <script src="https://inorganik.github.io/countUp.js/dist/countUp.umd.js"></script>

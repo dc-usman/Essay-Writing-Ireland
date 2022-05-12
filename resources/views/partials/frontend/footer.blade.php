@@ -28,8 +28,8 @@
                                 class="text-white hover:text-gray-300 text-md">Home</a></li>
                         <li class="py-1"><a href="{{ route('about') }}"
                                 class="text-white hover:text-gray-300 text-md">About</a></li>
-                        <li class="py-1"><a href="{{ route('services') }}"
-                                class="text-white hover:text-gray-300 text-md">Services</a></li>
+                        {{-- <li class="py-1"><a href="{{ route('services') }}"
+                                class="text-white hover:text-gray-300 text-md">Services</a></li> --}}
                         <li class="py-1"><a href="{{ route('contact') }}"
                                 class="text-white hover:text-gray-300 text-md">Contact</a></li>
                         <li class="py-1"><a href="{{ route('reviews') }}"
@@ -39,7 +39,7 @@
                     </ul>
                 </div>
 
-                <div class="px-4 md:order-3 lg:order-3">
+                {{-- <div class="px-4 md:order-3 lg:order-3">
                     <h4 class="text-2xl title-font font-medium text-white mb-3">Services</h4>
 
                     <ul class="list-none mb-10">
@@ -52,7 +52,7 @@
                             @endforeach
                         @endif
                     </ul>
-                </div>
+                </div> --}}
 
                 <div class="px-4 md:order-2 lg:order-4">
                     <h4 class="text-2xl title-font font-medium text-white mb-3">Contact Us</h4>
@@ -62,17 +62,20 @@
                                 {{ $web_setting->email }}
                             </a>
                         </li>
-                        <li class="py-1">
+                        {{-- <li class="py-1">
                             <a href="https://api.whatsapp.com/send?phone={{ $web_setting->contact }}" target="_blank" class="text-white hover:text-gray-300 text-md ">
                                 {{ 'UAE- +'.$web_setting->contact }}
                             </a>
-                        </li>
+                        </li> --}}
                         <h4 class="text-2xl title-font font-medium text-white my-4">100% Secure Payment</h4>
                         <img class="mx-auto md:mx-0 lg:mx-0"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAAAXCAMAAAAIs8vhAAAChVBMVEUAAAD29vYlVZbZeRJsISMiLWb60Q9rICJsISMmVZb29vbZexQYUKDvvRscWKA0YJsmVZYfVZshLWby8vMoMWImVpb39vbz9PUiLWXuyBPm5+jn6OkiLmcyWI/29vb18+719POkilxAMVjYkBi6yNw1TojdixqGgk/v7/DZehRsISPRbBsmVZclTItJZn4mVZbx8fHs7O3V2uDb2tv30g/o6eohLGVrISP4+fhrICIiLWb60Q/50A+7ydsiLGVsISMiLWb70Q739/fn6Orn6OklVpffrBZqHiG+MSbw8vX6+vr9/fv1zQ7/1w+/zN/ZfRbj5eUaTJHciC7////q6+5LcagNQYsGBQDR2ug7RXjsxg3d5e/16t42Yp4cJ2Ldpw8oMmqghgmqyLldf7DILh/psA2sscZri7e1wdaGn8O/LSLG0+b57+AxO3CPdwjM29WjttFIUYCSWlmRqcqzzcFfo35OQQS60ceBiKiGtZ+JT07t0tHswb6RlrOFQ0l1YQY+MwPY391hkNKfwrLx15dZYYynNzjD186kqMCcobqLka5japOZZWdbSwQra8TinZl7sZbdjonSbme5Jx6wlApmVQUvJwI9eMnYyciRvKWqf398JSWCbQe3zOmNr95zndeytsr26MXlrKakdnfqw16ZJiXJVB2/oAujvuR3lL3147XNtrWTwatsc5lxr4pFoG/ctg0ZFQBShs67mJjx03/ZgHlyeWG2ljTOrAx3fqFupoNbbnJvRGEdkFigjj/FRCzjsivANynGydcZX7/CqKbkuD58OTuxiIhFk2FdmF+9U1HHoSeUtYZSS3agc2piR2rinEyTO0XgkiuRkGzPaDncknHWhUlu3mmVAAAAP3RSTlMA/fz9/v7o7TH29vb+Jv4vdP3ipUnoyFjqSTzJNP7sNG8OIf79/XT+3tvX/uOY/siPRi0Zyr22onBTyayfc1N+0Y+PAAALJklEQVRYw52Zh18TZxjHA9W2tkib7kVbqm3tsHsv9fCAy0XINYOEECAJZBAySUggECCEHabsPWWDyhKkgNuqbdWOv6fPDcJBI8H+buR539xH8evvee55XzifvnoSFEMLAhgExvRcjODLzzicb9/ft2/fsQdrH+jrtzgczk/P7N+///iD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"
                             alt="">
+                    </nav>
+                </div>
 
-                        <h4 class="text-2xl title-font font-medium text-white my-4">FOLLOW US</h4>
+                <div class="px-4 md:order-2 lg:order-4">
+                    <h4 class="text-2xl title-font font-medium text-white mb-4">FOLLOW US</h4>
 
                         <span class="inline-flex text-white">
                             <a href="{{ $web_setting->facebook_link ?? '#' }}" class="text-white hover:text-primary-light transition duration-300 flex">
@@ -96,7 +99,6 @@
                                 Instagram
                             </a>
                         </span>
-                    </nav>
                 </div>
             </div>
         </div>

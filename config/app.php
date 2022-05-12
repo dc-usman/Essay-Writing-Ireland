@@ -52,13 +52,13 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'https://assignmentshelp.ae/'),
+    'url' => env('APP_URL', 'https://essaywritingireland.com/ '),
 
-    'app_name' =>  'assignmentshelp.ae',
+    'app_name' =>  'essaywritingireland.com',
 
-    'app_url' =>  'https://assignmentshelp.ae/',
+    'app_url' =>  'https://essaywritingireland.com/',
 
-    'app_email' => 'info@assignmentshelp.ae',
+    'app_email' => 'info@essaywritingireland.com',
 
     'asset_url' => env('ASSET_URL', null),
 

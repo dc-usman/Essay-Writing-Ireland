@@ -18,12 +18,12 @@
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 
-            <a href="{{route('home')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">Home</a>
+            <a href="{{route('home')}}" class="block nav-bar-items py-2 md:mx-2 px-5">Home</a>
 
-            <a href="{{route('about')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">About</a>
+            <a href="{{route('about')}}" class="block nav-bar-items py-2 md:mx-2 px-5">About</a>
 
-            <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                <button @click="open = !open" class="block w-full text-left font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">
+            {{-- <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open" class="block w-full text-left nav-bar-items py-2 md:mx-2 px-5">
                     <span>Services</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                         class="inline w-4 h-4 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -49,9 +49,9 @@
                         @endif
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
-            <a href="{{route('contact')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">Contact</a>
+            <a href="{{route('contact')}}" class="block nav-bar-items py-2 md:mx-2 px-5">Contact</a>
 
             <div class="flex flex-col md:flex-row  md:items-center my-3 mx-3 lg:my-0 md:space-x-1 space-y-2 md:space-y-0 ">
                 <a href="{{route('reviews')}}" class="btn-primary">

@@ -29,9 +29,9 @@ class ContactController extends Controller
         // event(new ContactCreated($contact));
 
         // Send mail to user
-     //   Mail::to($contact->email)->send(new ContactMail($contact));
+        Mail::to($contact->email)->send(new ContactMail($contact));
         // Send mail to admin
-     //   Mail::to(env('MAIL_FROM_ADDRESS', config('app.app_email')))->send(new ContactAdminMail($contact));
+        Mail::to(env('MAIL_FROM_ADDRESS', config('app.app_email')))->send(new ContactAdminMail($contact));
 
      return response()->json(['success'=>"Thank you for showing your intrest, We've receive your query successfully."]);
     }

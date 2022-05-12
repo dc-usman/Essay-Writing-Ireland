@@ -87,12 +87,12 @@
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
 
-                    <a href="{{route('home')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">Home</a>
+                    <a href="{{route('home')}}" class="block nav-bar-items py-2 md:mx-2 px-5">Home</a>
 
-                    <a href="{{route('about')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">About</a>
+                    <a href="{{route('about')}}" class="block nav-bar-items py-2 md:mx-2 px-5">About</a>
 
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
-                        <button @click="open = !open" class="block w-full text-left font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">
+                        <button @click="open = !open" class="block w-full text-left nav-bar-items py-2 md:mx-2 px-5">
                             <span>Services</span>
                             <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}"
                                 class="inline w-4 h-4 ml-1 transition-transform duration-200 transform md:-mt-1">
@@ -120,7 +120,7 @@
                         </div>
                     </div>
 
-                    <a href="{{route('contact')}}" class="block font-semibold text-secondary hover:text-primary-light py-2 md:mx-2 px-5">Contact</a>
+                    <a href="{{route('contact')}}" class="block nav-bar-items py-2 md:mx-2 px-5">Contact</a>
 
                     <div class="flex flex-col md:flex-row  md:items-center my-3 mx-3 lg:my-0 md:space-x-1 space-y-2 md:space-y-0 ">
                         <a href="{{route('reviews')}}" class="btn-primary">
@@ -297,7 +297,7 @@
                 {{-- <div class="hidden lg:block w-1/4"></div> --}}
                 <div class="w-full lg:w-1/2  bg-center">
                     <div class="max-w-xs m-auto mt-20" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1000">
-                        <h4 class="font-bold title-font text-center text-2xl bg-gradient-to-r from-primary-light to-primary-dark text-white py-3 px-7 rounded-t-lg">
+                        <h4 class="font-bold title-font text-center text-2xl primary-bar text-white py-3 px-7 rounded-t-lg">
                             Calculate Your Price
                         </h4>
                         <div class="shadow-md rounded-b-lg p-5 flex flex-col md:ml-auto w-full  border border-gray-200" style="background-color: rgb(255, 255, 255, 0.6);">

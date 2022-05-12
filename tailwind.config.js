@@ -45,7 +45,7 @@ module.exports = {
                 'color-gold-light':'#7a6a05',
                 'color-maroon-light':'#895058',
                 'color-primary-dark':'#9a5130',
-                'color-footer':'#361e21',
+                'color-footer':'#92400e',               //old footer color #361e21
                 'slider-button-dark':'#ba0f0f',
                 'slider-button-light':'#f05151',
             },  
