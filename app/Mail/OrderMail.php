@@ -14,18 +14,29 @@ class OrderMail extends Mailable
 
     protected $data;
     protected $attachmentsPath;
+    protected $subjectname;
+    protected $papername;
+    protected $stylename;
+    // protected $subjectname;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Request $request, $files)
+    public function __construct(Request $request, $files,$styleName,$paperTypeName,$subjectName)
     {
+        // $this->subjectname=$order->subject->name;
+        // dd($this->subjectname);
         $this->data = $request->all();
+        $this->subjectname=$subjectName;
+        $this->papername=$paperTypeName;
+        $this->stylename=$styleName;
         $this->attachmentsPath = $files;
+
     }
 
+    
 
     /**
      * Build the message.
@@ -34,7 +45,7 @@ class OrderMail extends Mailable
      */
     public function build()
     {
-        $email = $this->markdown('email.order')->subject('Order Confirmation')->with(["data" => $this->data]);
+        $email = $this->markdown('email.order')->subject('Order Confirmation')->with(["data" => $this->data,"subjectname"=>$this->subjectname,"papername"=>$this->papername,"stylename"=>$this->stylename]);
 
         foreach ($this->attachmentsPath as $filePath) {
             $email->attachFromStorage('/public/'. $filePath);

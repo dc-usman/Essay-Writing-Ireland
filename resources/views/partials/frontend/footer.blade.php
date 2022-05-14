@@ -78,7 +78,7 @@
                     <h4 class="text-2xl title-font font-medium text-white mb-4">FOLLOW US</h4>
 
                         <span class="inline-flex text-white">
-                            <a href="{{ $web_setting->facebook_link ?? '#' }}" class="text-white hover:text-primary-light transition duration-300 flex">
+                            <a href="{{ $web_setting->facebook_link ?? '#' }}" class="text-white  transition duration-300 flex">
                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     class="w-5 h-5 bg-blue-700 rounded-full p-1 mr-2" viewBox="0 0 24 24">
                                     <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z">
@@ -89,7 +89,7 @@
                         </span>
                         <br>
                         <span class="inline-flex text-white">
-                            <a href="{{ $web_setting->instagram_link ?? '#' }}" class=" text-white hover:text-primary-light transition duration-300 flex">
+                            <a href="{{ $web_setting->instagram_link ?? '#' }}" class=" text-white  transition duration-300 flex">
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-5 h-5 bg-pink-700 rounded-full p-1 mr-2"
                                     viewBox="0 0 24 24">

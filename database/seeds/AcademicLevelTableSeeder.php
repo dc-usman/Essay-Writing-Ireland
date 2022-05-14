@@ -13,20 +13,17 @@ class AcademicLevelTableSeeder extends Seeder
     public function run()
     {
         AcademicLevel::insert([
-            [
-                'name' => 'College',
-            ],
+            // [
+            //     'name' => 'High School',
+            // ],
             [
                 'name' => 'Undergraduate',
             ],
             [
-                'name' => 'Master\'s',
+                'name' => 'Masters',
             ],
             [
-                'name' => 'Ph.D.',
-            ],
-            [
-                'name' => 'Addmission Essay',
+                'name' => 'Phd',
             ],
         ]);
     }

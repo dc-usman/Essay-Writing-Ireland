@@ -9,9 +9,9 @@
                         <tbody>
                             <tr>
                                 <td colspan="4" valign="top"
-                                    style="border-collapse:collapse;border:0;margin:0;padding:0;color:#555559;font-family:Arial,sans-serif;font-size:16px;line-height:26px;background-color:#fff;border-bottom:4px solid #2793d4;text-align:center">
+                                    style="border-collapse:collapse;border:0;margin:0;padding:0;color:#555559;font-family:Arial,sans-serif;font-size:16px;line-height:26px;background-color:#fff;border-bottom:4px solid #cf9d11;text-align:center">
                                     <a href="{{route('home')}}" target="_blank">
-                                        <img  src="{{ asset('imgs/logo.png') }}" alt="{{env('APP_NAME', config('app.name'))}}" style="height:100px; width:100px;">
+                                        <img  src="{{ asset('imgs/logo.png') }}" alt="{{env('APP_NAME', config('app.name'))}}" style="height:100px; ">
                                     </a>
                                 </td>
                             </tr>
@@ -50,7 +50,7 @@
                                     </table>
                                 </td>
                             </tr>
-                            <tr bgcolor="#fff" style="border-top:4px solid #2793d4">
+                            <tr bgcolor="#fff" style="border-top:4px solid #cf9d11">
                                 <td valign="top" style="border-collapse:collapse;border:0;margin:0;padding:0;color:#555559;font-family:Arial,sans-serif;font-size:16px;line-height:26px;background:#fff;text-align:center">
                                     <table style="font-weight:normal;border-collapse:collapse;border:0;margin:0;padding:0;font-family:Arial,sans-serif">
                                         <tbody>

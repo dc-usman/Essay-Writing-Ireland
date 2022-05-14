@@ -1,8 +1,7 @@
 @extends('layouts.web')
 
-@section('title', 'Essay Writing IreLand')
-@section('description', 'Want To Improve Your Grades? Contact UAE’s #1 Assignments Help Services and Get Assistance from
-    Cheap Assignment Writing Service UAE and Achieve High Grades.')
+@section('title', 'Ireland’s Best Essay Writing Service – Essay Help Ireland')
+@section('description', 'We are Offering Urgent Essay writing Services in Ireland Which is Not Only Cheap in Rates Also It Is an ideal Solution for The Students Here in Ireland.')
 @section('canonical', config('app.app_url'))
 
 @section('content')
@@ -384,7 +383,7 @@
     </div>
 
     {{-- Why Only Our Cheap --}}
-    <div class="container mx-auto flex flex-col md:flex-row items-center ">
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:space-x-4 ">
         <div class="md:w-1/3 md:mt-[52.2px]">
             <img src="../imgs/mobile-2.svg" alt="mobile" data-aos="fade-right" data-aos-duration="1000">
         </div>
@@ -399,11 +398,11 @@
             </p>
             <div class="space-y-4 mt-2">
                 <div class="flex items-center group">
-                    <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
+                    {{-- <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    </svg> --}}
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
                         {{-- <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">In-depth Research</p> --}}
                         <p class="text-secondary-dark text-sm pt-1">
@@ -415,11 +414,11 @@
                     </div>
                 </div>
                 <div class="flex items-center group">
-                    <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
+                    {{-- <svg class="w-1/12 h-10  group-hover:text-primary-light" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
+                    </svg> --}}
                     <div class="ml-2 lg:ml-0 flex flex-col w-11/12">
                         {{-- <p class="text-secondary-dark text-xl font-bold group-hover:text-primary-light">Experienced Writers</p> --}}
                         <p class="text-secondary-dark text-sm pt-1">
@@ -468,10 +467,10 @@
     {{-- Prices --}}
     <div class="container mx-auto items-center justify-center">
 
-        <h4 class="main-heading text-center my-4"> Our Prices </h4>
+        <h4 class="main-heading text-center  my-4 md:my-8"> Our Prices </h4>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 xl:mx-10 gap-y-3">
-            <div data-aos="fade-up" data-aos-duration="1000"
+        <div class="grid sm:grid-cols-1 lg:grid-cols-3 xl:mx-10 gap-y-3">
+            {{-- <div data-aos="fade-up" data-aos-duration="1000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     College
@@ -485,7 +484,7 @@
                         Per Page
                     </p>
                 </div>
-            </div>
+            </div> --}}
             <div data-aos="fade-up" data-aos-duration="2000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
@@ -495,7 +494,7 @@
                     <p class="text-gray-700 text-base mb-4">
                         Starting From
                     </p>
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">DHS 40</h5>
+                    <h5 class="text-gray-900 text-2xl font-medium mb-2">€ 8</h5>
                     <p class="text-gray-700 text-base ">
                         Per Page
                     </p>
@@ -510,7 +509,7 @@
                     <p class="text-gray-700 text-base mb-4">
                         Starting From
                     </p>
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">DHS 50</h5>
+                    <h5 class="text-gray-900 text-2xl font-medium mb-2">€ 10</h5>
                     <p class="text-gray-700 text-base ">
                         Per Page
                     </p>
@@ -525,13 +524,13 @@
                     <p class="text-gray-700 text-base mb-4">
                         Starting From
                     </p>
-                    <h5 class="text-gray-900 text-xl font-medium mb-2">DHS 60</h5>
+                    <h5 class="text-gray-900 text-2xl font-medium mb-2">€ 11</h5>
                     <p class="text-gray-700 text-base ">
                         Per Page
                     </p>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-duration="5000"
+            {{-- <div data-aos="fade-up" data-aos-duration="5000"
                 class="rounded shadow-lg text-center min-w-[11rem] sm:w-auto mx-auto up-animate">
                 <div class="primary-bar text-white font-semibold text-1xl py-3 px-6 border-b border-gray-300">
                     Admission Essay
@@ -545,7 +544,7 @@
                         Per Page
                     </p>
                 </div>
-            </div>
+            </div> --}}
         </div>
 
         <div class="text-center my-10 space-x-3">
@@ -564,7 +563,7 @@
 
         <div class="container mx-auto items-center justify-center py-4">
 
-            <h4 class="main-heading text-center my-4 lg:my-4 lg:mb-8"> Features </h4>
+            <h4 class="main-heading text-center my-4 lg:my-4 lg:mb-8">Best Paper Prices</h4>
 
             <div class="grid sm:grid-cols-2 xl:grid-cols-5 xl:mx-10 gap-y-6">
                 <div class="relative group mx-auto" data-aos="fade-down" data-aos-duration="1000">
@@ -576,11 +575,11 @@
                             class="w-5 h-6 p-4 bg-primary-light group-hover:bg-primary-dark transition duration-300 rounded-full -ml-3 -mt-3">
                         </div>
                         <div class="py-3 text-secondary text-lg font-semibold px-2">
-                            Limitless Amendments
+                            Academic Paper Writing
                         </div>
                         <div class="py-3">
-                            <p class="relative text-secondary text-xl mb-4">
-                                DHS 50
+                            <p class="relative text-secondary text-lg mb-4">
+                                From € 8/page 
                                 <b
                                     class="absolute top-0 -right-10 p-4 text-white bg-primary-light group-hover:bg-primary-dark transition duration-300 rounded-full ">Free</b>
                             </p>
@@ -596,11 +595,11 @@
                             class="w-5 h-6 p-4 bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full -ml-3 -mt-3">
                         </div>
                         <div class="py-3 text-secondary text-lg font-semibold">
-                            Bibliography
+                            Eiditing and Proofreading
                         </div>
                         <div class="py-3">
-                            <p class="relative text-secondary text-xl mb-4">
-                                DHS 100
+                            <p class="relative text-secondary text-lg mb-4">
+                                From € 5/page
                                 <b
                                     class="absolute top-0 -right-10 p-4 text-white bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full ">Free</b>
                             </p>
@@ -617,11 +616,11 @@
                             class="w-5 h-6 p-4 bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full -ml-3 -mt-3">
                         </div>
                         <div class="py-3 text-secondary text-lg font-semibold">
-                            Outline
+                            Dissertation Services
                         </div>
                         <div class="py-3">
-                            <p class="relative text-secondary text-xl mb-4">
-                                DHS 70
+                            <p class="relative text-secondary text-lg mb-4">
+                                From € 10/page
                                 <b
                                     class="absolute top-0 -right-10 p-4 text-white bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full ">Free</b>
                             </p>
@@ -637,11 +636,11 @@
                             class="w-5 h-6 p-4 bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full -ml-3 -mt-3">
                         </div>
                         <div class="py-3 text-secondary text-lg font-semibold">
-                            Title Page
+                            Presentation Designing
                         </div>
                         <div class="py-3">
-                            <p class="relative text-secondary text-xl mb-4">
-                                DHS 30
+                            <p class="relative text-secondary text-lg mb-4">
+                                From € 6.8/page
                                 <b
                                     class="absolute top-0 -right-10 p-4 text-white bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full ">Free</b>
                             </p>
@@ -657,11 +656,11 @@
                             class="w-5 h-6 p-4 bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full -ml-3 -mt-3">
                         </div>
                         <div class="py-3 text-secondary text-lg font-semibold">
-                            Formatting
+                            Online Exams
                         </div>
                         <div class="py-3">
-                            <p class="relative text-secondary text-xl mb-4">
-                                DHS 50
+                            <p class="relative text-secondary text-lg mb-4">
+                                From € 49/hour
                                 <b
                                     class="absolute top-0 -right-10 p-4 text-white bg-primary-light group-hover:bg-primary-dark transition duration-300  rounded-full ">Free</b>
                             </p>
@@ -806,7 +805,7 @@
                 Why Should You Take Your First Chance on Our Irish Writing Services?
             </h3>
             <p class="text-secondary-dark text-sm py-7 leading-6">
-                We understand when you search on the internet “write my essay for me Ireland” you come across a lot of
+                We understand when you search on the internet<strong class="text-lg">“write my essay for me Ireland”</strong> you come across a lot of
                 writing websites that claim results and a myriad of services. And you got confused between the many options.
                 But when you find us for the first time, why should you choose us?
                 <br>

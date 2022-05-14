@@ -81,7 +81,12 @@ class OrdersController extends Controller
         DB::beginTransaction();
             //placing order
             $order = Order::create($request->all());
-
+            $styleName=$order->styleFunc->name;
+            $paperTypeName=$order->Papertype->name;
+            $subjectName=$order->subject->name;
+            // return $order->styleFunc->name  ;
+            
+            // return $order;
             // check if have some files attache tha add into db with respect to order id
             if ($request->hasfile('emailAttachments')) {
                 foreach($request->file('emailAttachments') as $file)
@@ -99,10 +104,10 @@ class OrdersController extends Controller
             }
         //     return $filePath;
             // Send mail to user
-         //   Mail::to($request->email)->send(new OrderMail($request, $files));
+            Mail::to($request->email)->send(new OrderMail($request, $files,$styleName,$paperTypeName,$subjectName));
 
             // Send mail to admin
-          //  Mail::to(env('MAIL_FROM_ADDRESS', config('app.app_email')) )->send(new OrderAdminMail($request, $files));
+             Mail::to(env('MAIL_FROM_ADDRESS', config('app.app_email')) )->send(new OrderAdminMail($request, $files, $styleName,$paperTypeName,$subjectName));
 
         DB::commit();
 
@@ -110,3 +115,4 @@ class OrdersController extends Controller
         return redirect()->back()->withSuccess("Thank you for showing your intrest, We've receive your query successfully.");
     }
 }
+

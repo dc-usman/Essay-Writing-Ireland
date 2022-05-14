@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use NunoMaduro\Collision\Adapters\Phpunit\Style;
 
 class Order extends Model
 {
@@ -50,5 +51,16 @@ class Order extends Model
     {
         return $this->belongsTo(Subject::class, "subject_area", "id");
     }
+
+    public function Papertype()
+    {
+        return $this->belongsTo(PaperType::class, "paper_type", "id");
+    }
+
+    public function styleFunc()
+    {
+        return $this->belongsTo(ReferenceStyle::class, "style", "id");
+    }
+
 
 }

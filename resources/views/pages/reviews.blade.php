@@ -22,7 +22,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Abdullah</p>
+                    <p class="text-lg font-semibold text-center">Ciara</p>
                     <ul class="flex justify-center mb-5">
 
                         <li class="my-auto text-cyan-600">
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Faisal </p>
+                    <p class="text-lg font-semibold text-center">Riley </p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Meenah</p>
+                    <p class="text-lg font-semibold text-center">Aaron</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -216,7 +216,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Amnah</p>
+                    <p class="text-lg font-semibold text-center">Saoirse</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -282,7 +282,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Hamdah</p>
+                    <p class="text-lg font-semibold text-center">Roisin</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -348,7 +348,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Rashid</p>
+                    <p class="text-lg font-semibold text-center">Orrin</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -412,7 +412,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Abdul Rehman</p>
+                    <p class="text-lg font-semibold text-center">Aoibh</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -476,7 +476,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Sheikh Sultan</p>
+                    <p class="text-lg font-semibold text-center">Aidan</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -537,7 +537,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Sheikh Sultan</p>
+                    <p class="text-lg font-semibold text-center">Barry</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -598,7 +598,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Mariam</p>
+                    <p class="text-lg font-semibold text-center">Connor</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -659,7 +659,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Mirza Khan</p>
+                    <p class="text-lg font-semibold text-center">Delma</p>
 
 
                     <ul class="flex justify-center mb-5">
@@ -720,7 +720,7 @@
                         </div>
                     </div>
                     <hr class="w-[50%] mx-auto h-2 ">
-                    <p class="text-lg font-semibold text-center">Sabahat</p>
+                    <p class="text-lg font-semibold text-center">Keaira</p>
                     <ul class="flex justify-center mb-5">
 
                         <li class="my-auto text-cyan-600">

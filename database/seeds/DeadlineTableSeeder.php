@@ -49,18 +49,6 @@ class DeadlineTableSeeder extends Seeder
                 'name' => '48 Hours',
                 'duration_in_days' => '2',
             ],
-            [
-                'name' => '24 Hours',
-                'duration_in_days' => '1',
-            ],
-            [
-                'name' => '12 Hours',
-                'duration_in_days' => '0.5',
-            ],
-            [
-                'name' => '6 Hours',
-                'duration_in_days' => '0.25',
-            ]
         ]);
     }
 }

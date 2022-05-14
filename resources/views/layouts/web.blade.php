@@ -76,15 +76,12 @@
     {{-- Footer --}}
     @include('partials.frontend.footer')
 
-    {{-- {{ TawkTo::widgetCode("https://embed.tawk.to/622b3ce01ffac05b1d7e17ff/1ftsebjnr") }} --}}
+    {{-- TawkTo --}}
+    {{ TawkTo::widgetCode("https://embed.tawk.to/627e6a80b0d10b6f3e7212ec/1g2ut025n") }} 
 
     {{-- scripts --}}
 
-    {{-- jQuery cdn --}}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    {{-- AJAX jQuery cdn --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    {{-- intl Tel Input JS --}}
+    {{-- jQuery cdn --}} 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     {{-- AOS JS CDN --}}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

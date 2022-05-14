@@ -14,124 +14,208 @@ class PaperTypeTableSeeder extends Seeder
     {
         PaperType::insert([
             [
-                "id"    =>  1,
-                "name"  =>  "Essay",
+                "name" => "Admission Essays"
             ],
             [
-                "id"    =>  2,
-                "name"  =>  "Term Paper",
+                "name" => "Admission Services - Editing"
             ],
             [
-                "id"    =>  3,
-                "name"  =>  "Research Paper",
+                "name" => "Analytical Essay"
             ],
             [
-                "id"    =>  4,
-                "name"  =>  "Course Work",
+                "name" => "Annotated Bibliography"
             ],
             [
-                "id"    =>  5,
-                "name"  =>  "Thesis Proposal",
+                "name" => "Argumentative Essay"
             ],
             [
-                "id"    =>  6,
-                "name"  =>  "Dissertation Chapter- Abstract",
+                "name" => "Article"
             ],
             [
-                "id"    =>  7,
-                "name"  =>  "Dissertation Chapter- Introduction Chapter",
+                "name" => "Article Critique"
             ],
             [
-                "id"    =>  8,
-                "name"  =>  "Dissertation Chapter- Literature Review",
+                "name" => "Assignment"
             ],
             [
-                "id"    =>  9,
-                "name"  =>  "Dissertation Chapter- Methodology",
+                "name" => "Biography"
             ],
             [
-                "id"    =>  10,
-                "name"  =>  " Dissertation Chapter- Result",
+                "name" => "Book Report"
             ],
             [
-                "id"    =>  11,
-                "name"  =>  "Dissertation Chapter- Discussion",
+                "name" => "Book Review"
             ],
             [
-                "id"    =>  12,
-                "name"  =>  "Book Report",
+                "name" => "Brief Overview"
             ],
             [
-                "id"    =>  13,
-                "name"  =>  "Book Review",
+                "name" => "Business Plan"
             ],
             [
-                "id"    =>  14,
-                "name"  =>  "Movie Review",
+                "name" => "Capstone Project"
             ],
             [
-                "id"    =>  15,
-                "name"  =>  "Research Proposal",
+                "name" => "Case Study"
             ],
             [
-                "id"    =>  16,
-                "name"  =>  "Case Study",
+                "name" => "Contrast Essay"
             ],
             [
-                "id"    =>  17,
-                "name"  =>  "Article",
+                "name" => "Course Work"
             ],
             [
-                "id"    =>  18,
-                "name"  =>  "Annotated Bibliography",
+                "name" => "Coursework"
             ],
             [
-                "id"    =>  19,
-                "name"  =>  "Power Point Presentation",
+                "name" => "Cover Letter"
             ],
             [
-                "id"    =>  20,
-                "name"  =>  "Admission Essays",
+                "name" => "Critical Analysis"
             ],
             [
-                "id"    =>  21,
-                "name"  =>  "Admission Sevices - Editing",
+                "name" => "Dissertation"
             ],
             [
-                "id"    =>  22,
-                "name"  =>  "Scholarship Essay",
+                "name" => "Dissertation Chapter"
             ],
             [
-                "id"    =>  23,
-                "name"  =>  "Personal Statement",
+                "name" => "Dissertation Chapter - Abstract"
             ],
             [
-                "id"    =>  24,
-                "name"  =>  "Editing",
+                "name" => "Chapter - Discussion"
             ],
             [
-                "id"    =>  25,
-                "name"  =>  "Formating",
+                "name" => "Dissertation Chapter - Introduction Chapter"
             ],
             [
-                "id"    =>  26,
-                "name"  =>  "Multiple Choice Questions(Non time framed)",
+                "name" => "Dissertation Chapter - Literature Review"
             ],
             [
-                "id"    =>  27,
-                "name"  =>  "Multiple Choice Questions(time framed)",
+                "name" => "Dissertation Chapter - Result"
             ],
             [
-                "id"    =>  28,
-                "name"  =>  "Math Problem",
+                "name" => "Dissertation Chapter - Methodology"
             ],
             [
-                "id"    =>  29,
-                "name"  =>  "Assignment",
+                "name" => "Dissertation/Thesis Proposal"
             ],
             [
-                "id"    =>  30,
-                "name"  =>  "Paraphrasing",
+                "name" => "EBooks"
+            ],
+            [
+                "name" => "Editing"
+            ],
+            [
+                "name" => "Essay"
+            ],
+            [
+                "name" => "Exposition Writing"
+            ],
+            [
+                "name" => "Formatting"
+            ],
+            [
+                "name" => "Lab Report"
+            ],
+            [
+                "name" => "Letter of Recommendation"
+            ],
+            [
+                "name" => "Literature Review"
+            ],
+            [
+                "name" => "Math Problem"
+            ],
+            [
+                "name" => "Movie Review"
+            ],
+            [
+                "name" => "Multiple Choice Questions ( Non Time Framed )"
+            ],
+            [
+                "name" => "Multiple Choice Questions ( Time Framed )"
+            ],
+            [
+                "name" => "News Release"
+            ],
+            [
+                "name" => "Paraphrasing"
+            ],
+            [
+                "name" => "Personal Statement"
+            ],
+            [
+                "name" => "Power Point Presentation ( With Speaker Notes )"
+            ],
+            [
+                "name" => "Power Point Presentation ( Without Speaker Notes)"
+            ],
+            [
+                "name" => "PowerPoint Presentation"
+            ],
+            [
+                "name" => "Press Release"
+            ],
+            [
+                "name" => "Project"
+            ],
+            [
+                "name" => "Proofreading"
+            ],
+            [
+                "name" => "Quiz"
+            ],
+            [
+                "name" => "Reaction Paper"
+            ],
+            [
+                "name" => "Reflection Paper"
+            ],
+            [
+                "name" => "Reflective Essay"
+            ],
+            [
+                "name" => "Reflective Writing"
+            ],
+            [
+                "name" => "Report"
+            ],
+            [
+                "name" => "Research Essay"
+            ],
+            [
+                "name" => "Research Paper"
+            ],
+            [
+                "name" => "Research Proposal"
+            ],
+            [
+                "name" => "Response Essay"
+            ],
+            [
+                "name" => "Response Paper"
+            ],
+            [
+                "name" => "Resume"
+            ],
+            [
+                "name" => "Rewriting"
+            ],
+            [
+                "name" => "Scholarship Essay"
+            ],
+            [
+                "name" => "Speech/Presentation"
+            ],
+            [
+                "name" => "Statement of Purpose"
+            ],
+            [
+                "name" => "Term Paper"
+            ],
+            [
+                "name" => "Thesis"
             ],
         ]);
     }
