@@ -76,7 +76,7 @@
                         <a href="{{ route('reviews') }}" class="btn-primary">
                             Reviews
                         </a>
-                        <a href="{{ route('order') }}" class="btn-primary-outline break-normal"
+                        <a href="{{ route('order') }}" class="btn-primary-outline break-normal animated tada"
                             style="background-color: rgb(255, 255, 255, 0.6);">
                             Order Now
                         </a>
@@ -563,7 +563,7 @@
 
         <div class="container mx-auto items-center justify-center py-4">
 
-            <h4 class="main-heading text-center my-4 lg:my-4 lg:mb-8">Best Paper Prices</h4>
+            <h4 class="main-heading text-center my-4 lg:my-4 lg:mb-12">Best Paper Prices</h4>
 
             <div class="grid sm:grid-cols-2 xl:grid-cols-5 xl:mx-10 gap-y-6">
                 <div class="relative group mx-auto" data-aos="fade-down" data-aos-duration="1000">
@@ -669,11 +669,11 @@
                 </div>
             </div>
 
-            <p class="text-gray-500 text-2xl md:text-2xl lg:text-4xl pt-8 pb-4 text-center">
+            {{-- <p class="text-gray-500 text-2xl md:text-2xl lg:text-4xl pt-8 pb-4 text-center">
                 Get all these features for <del>300 DHS</del> <b class="text-color-primary-dark">FREE</b>
-            </p>
+            </p> --}}
 
-            <div class="flex flex-row justify-center my-4">
+            <div class="flex flex-row justify-center my-4 md:my-8">
                 <a href="{{ route('order') }}"
                     class="inline-flex text-white bg-gray-500 font-bold border-0 py-2 px-6 hover:bg-primary-light rounded text-lg up-animate">
                     GET Order NOW</a>
@@ -712,9 +712,9 @@
 
             <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 gr-border md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">
-                    <a href="{{ route('services.show', 'thesis-writing') }}">
+                    {{-- <a href="{{ route('services.show', 'thesis-writing') }}"> --}}
                         Narrative Essays
-                    </a>
+                    {{-- </a> --}}
                 </h4>
                 <p class="text-gray-700 text-base mb-4">
                     Writing a narrative essay seems easy on the outside but from the inside, it requires research and a
@@ -742,9 +742,9 @@
 
             <div class="border-0 px-9 border-b-2 sm:px-14 md:border-r-2 md:border-b-2 gr-border md:p-4">
                 <h4 class="text-primary-dark font-bold text-xl pb-3 pt-2">
-                    <a href="{{ route('services.show', 'essay-writing') }}">
+                    {{-- <a href="{{ route('services.show', 'essay-writing') }}"> --}}
                         Argumentative Essays
-                    </a>
+                    {{-- </a> --}}
                 </h4>
                 <p class="text-gray-700 text-base mb-4">
                     Argumentative essays not only require research but also impeccable writing skills that can convince the

@@ -57,7 +57,7 @@
                 <a href="{{route('reviews')}}" class="btn-primary">
                     Reviews
                 </a>
-                <a href="{{route('order')}}" class="btn-primary-outline break-normal">
+                <a href="{{route('order')}}" class="btn-primary-outline break-normal  animated tada hover:animate-none" >
                     Order Now
                 </a>
             </div>

@@ -9,7 +9,7 @@ Route::group(['namespace' => 'Web' ], function() {
     Route::get('/',             "PagesController@index")->name('home');
     Route::get('/about',        "PagesController@about")->name('about');
     Route::get('/reviews',      "PagesController@reviews")->name('reviews');
-    Route::get('/sitemap',      "PagesController@sitemap")->name('sitemap');
+    // Route::get('/sitemap',      "PagesController@sitemap")->name('sitemap');
     Route::post('/get-fare',    "PagesController@getFare")->name('get.fare');
     Route::post('/order-query', "PagesController@orderQuery")->name('order.query');
 
@@ -25,11 +25,11 @@ Route::group(['namespace' => 'Web' ], function() {
     Route::get('/revision-policy',      "PoliciesController@revisionPolicy")->name('policy.revision');
     Route::get('/refund-policy',        "PoliciesController@refundPolicy")->name('policy.refund');
     Route::get('/terms-and-conditions', "PoliciesController@termsAndConditions")->name('policy.terms-and-conditions');
-    Route::get('/privacy-policy',       "PoliciesController@privacyPolicy")->name('policy.privacy-policy');
+    // Route::get('/privacy-policy',       "PoliciesController@privacyPolicy")->name('policy.privacy-policy');
 
     // ServicesController
-    Route::get('/services',             "ServicesController@create")->name('services');
-    Route::get('/services/{slug}',      "ServicesController@show")->name('services.show');
+    // Route::get('/services',             "ServicesController@create")->name('services');
+    // Route::get('/services/{slug}',      "ServicesController@show")->name('services.show');
 });
 
 Auth::routes([
